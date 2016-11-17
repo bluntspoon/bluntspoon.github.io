@@ -43,6 +43,7 @@
         var contentId = $(this).attr('href');
        $("#about").hide(); 
         $("#home").hide(); 
+          $("#login").hide(); 
         $(contentId).fadeIn(1000);
     });
          
@@ -90,7 +91,6 @@
             </nav>
         </div>
         <main class="mdl-layout__content">
-
             <!--Home Cards-->
             <div id="home" class="mdl-grid" style="display:none">
                 <div class="mdl-cell mdl-cell--4-col card-lesson mdl-card mdl-shadow--2dp">
@@ -132,30 +132,30 @@
                     </div>
                 </div>
             </div>
+
             <!--Login-->
-            <!--<div class="mdl-card mdl-shadow--6dp">
-			<div class="mdl-card__title mdl-color-text--white">
-				<h2 class="mdl-card__title-text">LOG IN</h2>
-			</div>
-	  	<div class="mdl-card__supporting-text">
-				<form action="#">
-					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" id="email" />
-						<label class="mdl-textfield__label" for="email">Email</label>
-					</div>
-					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="password" id="userpass" />
-						<label class="mdl-textfield__label" for="userpass">Password</label>
-					</div>
-				</form>
-			</div>
-			<div class="mdl-card__actions mdl-card--border">
-				<button class="mdl-button mdl-js-button mdl-js-ripple-effect">Log in</button>
-			</div>
-		</div>-->
+            <div id="login" class="mdl-card mdl-shadow--6dp" style="display:none">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">LOG IN</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="email" />
+                            <label class="mdl-textfield__label" for="email">Email</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="password" id="userpass" />
+                            <label class="mdl-textfield__label" for="userpass">Password</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Log in</button>
+                </div>
+            </div>
 
             <!--About-->
-
             <div id="about" class="page-content" style="display:none">
                 <img src="images/recycling_centre.jpg" width="100%">
                 <div id="recycling_centre">
