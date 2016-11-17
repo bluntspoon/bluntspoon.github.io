@@ -33,6 +33,7 @@ html, body {
 .card-lesson > .incentive-programme{
    background: url('images/cash.jpg') center / cover;
 }
+
 .card-lesson > .mdl-card__title > h4 {
   margin-top: 0;
 }
@@ -61,8 +62,22 @@ html, body {
    	background-color: #0D9789;
 }
 
+#recycling-centre{
+  width: 100vw;
+  height: 30vh;
+   background: url('images/bag.jpg');
+   background-size: 100px 82px;
+position: fixed;
+ 
+  align-items: flex-start;
+  	background-color: #0D9789;
+}
 
-
+#incentative-programme
+{
+  background-color: #80C8C2;
+ 
+}
 
 .logo {
   display: block;
@@ -96,6 +111,8 @@ html, body {
 
 .mdl-layout-title
 {
+  	background-color: #0D9789;
+	color: #FFF;
   font-family: 'Open Sans', sans-serif;
    /*align-items: center;*/
   /*justify-content: center;*/
@@ -110,6 +127,8 @@ html, body {
 	background-color: #0D9789;
 	color: #FFF;
 }
+
+.mdl-layout-title
 .demo-drawer {
   border: none;
 }
@@ -182,7 +201,7 @@ html, body {
   font-size: 18px;
 }
 .demo-layout .demo-navigation .mdl-navigation__link:hover {
-  background-color: #0D9789;
+  background-color: #80C8C2;
   color: #fff;
 }
 .demo-navigation .mdl-navigation__link .material-icons {
@@ -194,4 +213,15 @@ html, body {
 .demo-content {
   max-width: 1080px;
 }
+
+#about{
+  background-color: #80C8C2;
+  color: #0D4D40;
+ 
+}
+
+.page-content{
+ padding: 10px;
+}
+
 
