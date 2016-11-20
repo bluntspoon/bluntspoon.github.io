@@ -30,34 +30,37 @@
     $(document).ready(function() {
             $("body").css("display", "none");
             $("body").fadeIn(1000);
-            $("#home").show();
-
-
-            $(".mdl-navigation > a").click(function(e){
-              
+            var hash = window.location.hash;
+             pageDirect(hash);
+            //$("#home").show();
+            $("a").click(function(e){
                     var contentId = $(this).attr('href');
-                    $("#how-to").hide(); 
-                    $("#about").hide(); 
-                    $("#home").hide(); 
-                    $("#login").hide(); 
-                    $("#contact").hide(); 
-
-                    if(contentId === "#how-to" ||
-                       contentId === "#contact"
-                    )
-                    {
-                        $(".mdl-layout").css("background-color", "#80C8C2");
-                    }
-                    else
-                    {
-                        $(".mdl-layout").css("background-color", "#fff");
-                    }
-                    $(contentId).fadeIn(1000);
+                   pageDirect(contentId);
               });
                  document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
                  document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
                 this.classList.remove('is-visible');
                 }, false);
+
+                function pageDirect(contentId){
+                    if(contentId === "#how-to" ||
+                       contentId === "#contact" ||
+                       contentId === "#login" ||
+                       contentId === "#launch"
+                    ){
+                        $(".mdl-layout").css("background-color", "#80C8C2");
+                    }else
+                    {
+                        $(".mdl-layout").css("background-color", "#fff");
+                    }
+                    $("#launch").hide(); 
+                    $("#how-to").hide(); 
+                    $("#about").hide(); 
+                    $("#home").hide(); 
+                    $("#login").hide(); 
+                    $("#contact").hide(); 
+                    $(contentId).fadeIn(1000);
+                }
 
     });
 </script>
@@ -108,7 +111,8 @@
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
-                        <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn More</button>
+                         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#launch">Learn More</a>
+                        <!--<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn More</button>-->
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--4-col card-lesson mdl-card mdl-shadow--2dp">
@@ -123,6 +127,17 @@
                         <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn More</button>
                     </div>
                 </div>
+            </div>
+
+            <!--Launch-->
+            <div id="launch" class="page-content" style="display:none">
+                <div class="first-launch"></div>
+                <img class="svg grpelem" id="launch" src="content/images/launch.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/about_us_svg.jpg">
+                <p>Paper Plain is buzzing with excitement as we announce the launch of our first paper recycling centre. The official launch of this recycling centre is scheduled for Saturday 17 December 2016!</p>
+                <p>To celebrate this launch, we have decided to throw a bit of a party. Pop in anytime from 10am. There will be a paper recycling seminar and some fun paperless games. Join us as we try to break the record of the most paper recycled in one sitting!</p>
+                <p>On this day, you will also be able to receive double points for your recycling efforts. We can't wait to see you there!</p>
+                <br/>
+                <br/>
             </div>
 
             <!--Login-->
@@ -170,61 +185,38 @@
             <!--How-To-->
             <div id="how-to" class="page-content" style="display:none">
                 <img class="svg grpelem" id="how-to" src="content/images/handbook.svg" width="100%" height="200" alt="" data-mu-svgfallback="content/images/handbook_svg.jpg">
-                <p>We have compiled a handy guide to assist you with your recycling. Click on the download link below to familarise yourself with some basic paper recycling practises before you visit the Paper Plain recycling centre.</p>
+                <p>We have compiled a handy guide to assist you with your recycling. Click on the download link below to familarise
+                    yourself with some basic paper recycling practises before you visit the Paper Plain recycling centre.</p>
                 <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Download</button>
             </div>
 
             <!--Contact-Us-->
-     <div id="contact" class="page-content" style="display:none">
+            <div id="contact" class="page-content" style="display:none">
                 <img class="svg grpelem" id="how-to" src="content/images/contact.svg" width="100%" height="100" alt="" data-mu-svgfallback="content/images/contact_svg.jpg">
-                
-                        <div id="contact" class="mdl-card mdl-shadow--6dp" >
-                
-                <div class="mdl-card__supporting-text">
-                   <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="name" />
-                            <label class="mdl-textfield__label" for="name">Name</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="email" />
-                            <label class="mdl-textfield__label" for="email">Email</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
-                            <label class="mdl-textfield__label" for="message">Message</label>
-                        </div>
-                    </form>
+                <div id="contact" class="mdl-card mdl-shadow--6dp">
+                    <div class="mdl-card__supporting-text">
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="name" />
+                                <label class="mdl-textfield__label" for="name">Name</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="email" />
+                                <label class="mdl-textfield__label" for="email">Email</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <textarea class="mdl-textfield__input" type="text" rows="3" id="message"></textarea>
+                                <label class="mdl-textfield__label" for="message">Message</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>
+                    </div>
                 </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>
-                </div>
+                <p>(031) 266 3679 | Westville Civic Centre</p>
             </div>
-            <p>(031) 266 3679 | Westville Civic Centre</p>
-            </div>
-            <!--<div id="contact" class="page-content" style="display:none">
-                <img class="svg grpelem" id="how-to" src="content/images/contact.svg" width="100%" height="200" alt="" data-mu-svgfallback="content/images/contact_svg.jpg">
-                
-                                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="name" />
-                            <label class="mdl-textfield__label" for="name">Name</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="email" />
-                            <label class="mdl-textfield__label" for="email">Email</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
-                            <label class="mdl-textfield__label" for="message">Message...</label>
-                        </div>
-                    </form>
-
-                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>
-            </div>-->
-
         </main>
     </div>
 </body>
-
 </html>

@@ -237,5 +237,10 @@ position: fixed;
    padding-left: 30px;
 }
 
+#launch > .first-launch{
+  background: url('../images/bags.jpg') center / cover;
+  height: 200px;
+}
+
 
 
