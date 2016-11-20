@@ -232,10 +232,10 @@ position: fixed;
  padding: 10px;
 }
 
-/*#contact{
-  background-color: #80C8C2;
-  color: #0D4D40;
-}*/
+#contact> p{
+  padding-top: 5px;
+   padding-left: 30px;
+}
 
 
 
