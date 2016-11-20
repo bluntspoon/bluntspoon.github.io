@@ -47,7 +47,9 @@
                        contentId === "#contact" ||
                        contentId === "#login" ||
                        contentId === "#launch"||
+                       contentId === "#login"||
                        contentId === "#rewards"
+                       
                     ){
                         $(".mdl-layout").css("background-color", "#80C8C2");
                     }else
@@ -114,7 +116,7 @@
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
-                         <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#launch">Learn More</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#launch">Learn More</a>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--4-col card-lesson mdl-card mdl-shadow--2dp">
@@ -135,47 +137,57 @@
             <div id="launch" class="page-content" style="display:none">
                 <div class="first-launch"></div>
                 <img class="svg grpelem" id="launch" src="content/images/launch.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/about_us_svg.jpg">
-                <p>Paper Plain is buzzing with excitement as we announce the launch of our first paper recycling centre. The official launch of this recycling centre is scheduled for Saturday 17 December 2016!</p>
-                <p>To celebrate this launch, we have decided to throw a bit of a party. Pop in anytime from 10am. There will be a paper recycling seminar and some fun paperless games. Join us as we try to break the record of the most paper recycled in one sitting!</p>
-                <p>On this day, you will also be able to receive double points for your recycling efforts. We can't wait to see you there!</p>
+                <p>Paper Plain is buzzing with excitement as we announce the launch of our first paper recycling centre. The
+                    official launch of this recycling centre is scheduled for Saturday 17 December 2016!</p>
+                <p>To celebrate this launch, we have decided to throw a bit of a party. Pop in anytime from 10am. There will
+                    be a paper recycling seminar and some fun paperless games. Join us as we try to break the record of the
+                    most paper recycled in one sitting!</p>
+                <p>On this day, you will also be able to receive double points for your recycling efforts. We can't wait to
+                    see you there!</p>
                 <br/>
                 <br/>
             </div>
 
-             <!--Rewards-->
+            <!--Rewards-->
             <div id="rewards" class="page-content" style="display:none">
                 <div class="incentive-programme"></div>
                 <img class="svg grpelem" id="rewards" src="content/images/rewards.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/about_us_svg.jpg">
-                <p>We all love being rewarded right? That's why Paper Plain joined with Kulula airlines to give you the ultimate reward!</p> 
+                <p>We all love being rewarded right? That's why Paper Plain joined with Kulula airlines to give you the ultimate
+                    reward!</p>
                 <p class="strong">What does this partnership mean for you?</p>
-                <p>Because we love rewarding you for your recycling efforts. You can now receive up to 50% off flight vouchers from Kulula airlines, simply for recycling your paper waste.</p>
+                <p>Because we love rewarding you for your recycling efforts. You can now receive up to 50% off flight vouchers
+                    from Kulula airlines, simply for recycling your paper waste.</p>
                 <p class="strong">Why Kulula?</p>
-                <p>This partnership was formed due to the fact that both Paper Plain and Kulula are passionate about saving the environment. We believe recycling is plain and simple, and we also believe in rewards. All we need is for you to partner with us and we can save the environment and you can get rewarded. It's a win win!</p>
+                <p>This partnership was formed due to the fact that both Paper Plain and Kulula are passionate about saving
+                    the environment. We believe recycling is plain and simple, and we also believe in rewards. All we need
+                    is for you to partner with us and we can save the environment and you can get rewarded. It's a win win!</p>
                 <br/>
                 <br/>
             </div>
 
             <!--Login-->
-            <div id="login" class="mdl-card mdl-shadow--6dp" style="display:none">
-                <div class="mdl-card__title">
-                    <h2 class="mdl-card__title-text">LOG IN</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="email" />
-                            <label class="mdl-textfield__label" for="email">Email</label>
-                        </div>
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="password" id="userpass" />
-                            <label class="mdl-textfield__label" for="userpass">Password</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Log in</button>
+            <div id="login" class="page-content" style="display:none">
+                <img class="svg grpelem" id="login" src="content/images/login.svg" width="100%" height="100" alt="" >
+                <br/>
+                <div class="mdl-card mdl-shadow--6dp">
+                    <div class="mdl-card__supporting-text">
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="email" />
+                                <label class="mdl-textfield__label" for="email">Email</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="password" id="userpass" />
+                                <label class="mdl-textfield__label" for="userpass">Password</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Log in</button>
+                    </div>
                 </div>
             </div>
+
 
             <!--About-->
             <div id="about" class="page-content" style="display:none">
@@ -234,4 +246,5 @@
         </main>
     </div>
 </body>
+
 </html>
