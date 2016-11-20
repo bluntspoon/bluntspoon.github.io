@@ -7,28 +7,23 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paper Plain</title>
-
+    <link rel="shortcut icon" href="content/images/favicon.png">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
+    <link rel="icon" sizes="192x192" href="content/images/android-desktop.png">
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Paper Plain">
-    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <link rel="apple-touch-icon-precomposed" href="content/images/ios-desktop.png">
 
-    <!-- Tile icon for Win8/10 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-    <script src="material.min.js"></script>
-    <link rel="stylesheet" href="material.min.css">
-    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="libs/material/material.min.js"></script>
+    <link rel="stylesheet" href="libs/material/material.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="content/styles/styles.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
     <script type="text/javascript">
@@ -40,16 +35,25 @@
 
             $(".mdl-navigation > a").click(function(e){
               
-        var contentId = $(this).attr('href');
-       $("#about").hide(); 
-        $("#home").hide(); 
-          $("#login").hide(); 
-        $(contentId).fadeIn(1000);
-    });
-         
+                    var contentId = $(this).attr('href');
+                    $("#how-to").hide(); 
+                    $("#about").hide(); 
+                    $("#home").hide(); 
+                    $("#login").hide(); 
 
-
-              document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+                    if(contentId === "#how-to" ||
+                       contentId === "#contact"
+                    )
+                    {
+                        $(".mdl-layout").css("background-color", "#80C8C2");
+                    }
+                    else
+                    {
+                        $(".mdl-layout").css("background-color", "#fff");
+                    }
+                    $(contentId).fadeIn(1000);
+              });
+                 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
                  document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
                 this.classList.remove('is-visible');
                 }, false);
@@ -65,20 +69,20 @@
             <div class="mdl-layout__header-row">
                 <div class="mdl-layout-spacer"></div>
                 <span class="mdl-layout-title">
-		  PAPER <b>PLAIN</b>
-		  </span>
+                    PAPER <b>PLAIN</b>
+                </span>
 
                 <div class="mdl-layout-spacer"></div>
                 <label class="mdl-button mdl-js-button mdl-button" for="crop_free">
-              <img src="images/plain-01.png" class="demo-avatar">
+              <img src="content/images/plain-01.png" class="demo-avatar">
            </label>
             </div>
         </header>
         <div class="demo-drawer mdl-layout__drawer">
 
-            <span class="mdl-layout-title">  <img src="images/plain-01.png" class="demo-avatar">
-		  PAPER <b>PLAIN</b>
-		  </span>
+            <span class="mdl-layout-title">  <img src="content/images/plain-01.png" class="demo-avatar">
+		        PAPER <b>PLAIN</b>
+		    </span>
 
             <nav class="demo-navigation mdl-navigation">
                 <a class="mdl-navigation__link" href="#home"><i class="material-icons" role="presentation">home</i>Home</a>
@@ -86,8 +90,9 @@
                 <a class="mdl-navigation__link" href="#how-to"><i class="material-icons" role="presentation">question_answer</i>How To</a>
                 <a class="mdl-navigation__link" href="#scan"><i class="material-icons" role="presentation">crop_free</i>Scanner</a>
                 <a class="mdl-navigation__link" href="#login"><i class="material-icons" role="presentation">person</i>Log In</a>
+                <a class="mdl-navigation__link" href="#contact"><i class="material-icons" role="presentation">contact_mail</i>Contact Us</a>
                 <div class="mdl-layout-spacer"></div>
-                <a class="mdl-navigation__link" href="#help"><i class="material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+                <!--<a class="mdl-navigation__link" href="#help"><i class="material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>-->
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -143,15 +148,15 @@
 
             <!--About-->
             <div id="about" class="page-content" style="display:none">
-                <img src="images/recycling_centre.jpg" width="100%">
+                <img src="content/images/recycling_centre.jpg" width="100%">
                 <div id="recycling_centre">
 
                 </div>
 
-                <img class="svg grpelem" id="about" src="images/about-us.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/about_us_svg.jpg">
+                <img class="svg grpelem" id="about" src="content/images/about-us.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/about_us_svg.jpg">
                 <p>Paper Plain is a Durban based paper recycling company, who believes recycling starts in the home. We believe
                     in sustainability and aim to create a future of 100% recycled paper in South Africa.</p>
-                <img class="svg grpelem" id="about" src="images/why-paper.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/why-paper.jpg">
+                <img class="svg grpelem" id="about" src="content/images/why-paper.svg" width="100%" height="200" alt="" data-mu-svgfallback="images/why-paper.jpg">
                 <p>Only 59% of South African paper waste is recycled.(treevolution.co.za) We have the goal of pushing this number
                     to 100% by 2020. We can't do this alone, that's why we need your help. We will even reward you for your
                     recycling efforts.</p>
@@ -160,6 +165,62 @@
                 <br/>
                 <br/>
             </div>
+
+            <!--How-To-->
+            <div id="how-to" class="page-content" style="display:none">
+                <img class="svg grpelem" id="how-to" src="content/images/handbook.svg" width="100%" height="200" alt="" data-mu-svgfallback="content/images/handbook_svg.jpg">
+                <p>We have compiled a handy guide to assist you with your recycling. Click on the download link below to familarise yourself with some basic paper recycling practises before you visit the Paper Plain recycling centre.</p>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Download</button>
+            </div>
+
+            <!--Contact-Us-->
+     <div id="contact" class="page-content" style="display:none">
+                <img class="svg grpelem" id="how-to" src="content/images/contact.svg" width="100%" height="100" alt="" data-mu-svgfallback="content/images/contact_svg.jpg">
+ 
+                        <div id="contact" class="mdl-card mdl-shadow--6dp" >
+                
+                <div class="mdl-card__supporting-text">
+                   <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="name" />
+                            <label class="mdl-textfield__label" for="name">Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="email" />
+                            <label class="mdl-textfield__label" for="email">Email</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+                            <label class="mdl-textfield__label" for="message">Message...</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>
+                </div>
+            </div>
+            </div>
+            <!--<div id="contact" class="page-content" style="display:none">
+                <img class="svg grpelem" id="how-to" src="content/images/contact.svg" width="100%" height="200" alt="" data-mu-svgfallback="content/images/contact_svg.jpg">
+                
+                                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="name" />
+                            <label class="mdl-textfield__label" for="name">Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <input class="mdl-textfield__input" type="text" id="email" />
+                            <label class="mdl-textfield__label" for="email">Email</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield">
+                            <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+                            <label class="mdl-textfield__label" for="message">Message...</label>
+                        </div>
+                    </form>
+
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Submit</button>
+            </div>-->
+
         </main>
     </div>
 </body>

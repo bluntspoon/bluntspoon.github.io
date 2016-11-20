@@ -1,0 +1,9 @@
+- favicon
+- Home pages
+- Login redirect
+- How to
+- Admin
+- Scanner
+- Contact us
+- Help
+- footer

@@ -28,10 +28,10 @@ html, body {
 }
 
 .card-lesson > .first-launch{
-  background: url('images/bags.jpg') center / cover;
+  background: url('../images/bags.jpg') center / cover;
 }
 .card-lesson > .incentive-programme{
-   background: url('images/cash.jpg') center / cover;
+   background: url('../images/cash.jpg') center / cover;
 }
 
 .card-lesson > .mdl-card__title > h4 {
@@ -65,7 +65,7 @@ html, body {
 #recycling-centre{
   width: 100vw;
   height: 30vh;
-   background: url('images/bag.jpg');
+   background: url('../images/bag.jpg');
    background-size: 100px 82px;
 position: fixed;
  
@@ -84,7 +84,7 @@ position: fixed;
   text-indent: -9999px;
   width: 100px;
   height: 82px;
-  background: url(images/logo.svg);
+  background: url(../images/logo.svg);
   background-size: 100px 82px;
 }
 
@@ -217,11 +217,25 @@ position: fixed;
 #about{
   background-color: #80C8C2;
   color: #0D4D40;
- 
+}
+
+#how-to{
+  background-color: #80C8C2;
+  color: #0D4D40;
+}
+
+#how-to > .mdl-button{
+  color: #FFF;
 }
 
 .page-content{
  padding: 10px;
 }
+
+/*#contact{
+  background-color: #80C8C2;
+  color: #0D4D40;
+}*/
+
 
 
