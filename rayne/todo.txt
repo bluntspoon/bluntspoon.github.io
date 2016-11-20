@@ -2,9 +2,9 @@
 - Home pages - Done
 - How to - Done
 - Contact us - Done
+- favicon - Done
 
 - Login redirect
-- favicon
 - Admin
 - Scanner
 - footer

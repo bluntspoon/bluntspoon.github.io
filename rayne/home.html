@@ -54,7 +54,8 @@
                        contentId === "#login" ||
                        contentId === "#launch"||
                        contentId === "#login"||
-                       contentId === "#rewards"
+                       contentId === "#rewards"||
+                       contentId === "#scan"
                        
                     ){
                         $(".mdl-layout").css("background-color", "#80C8C2");
@@ -70,6 +71,7 @@
                     $("#home").hide(); 
                     $("#login").hide(); 
                     $("#contact").hide(); 
+                    $("#scan").hide(); 
                     $(contentId).fadeIn(1000);
                 }
 
@@ -84,12 +86,14 @@
             <div class="mdl-layout__header-row">
                 <div class="mdl-layout-spacer"></div>
                 <span class="mdl-layout-title">
-                    PAPER <b>PLAIN</b>
+                   <a class="mdl-navigation__link page" href="#home"> PAPER <b>PLAIN</b></a>
                 </span>
 
                 <div class="mdl-layout-spacer"></div>
                 <label class="mdl-button mdl-js-button mdl-button" for="crop_free">
+                    <a class="mdl-navigation__link page" href="#scan"> 
               <img src="content/images/plain-01.png" class="demo-avatar">
+              </a>
            </label>
             </div>
         </header>
@@ -190,6 +194,37 @@
                         <button class="mdl-button mdl-js-button mdl-js-ripple-effect">Log in</button>
                     </div>
                 </div>
+            </div>
+
+              <!--Scan-->
+            <div id="scan" class="page-content" style="display:none">
+               <video autoplay></video>
+                <img src="">
+                <canvas style="display:none;"></canvas>
+
+                <script>
+                var video = document.querySelector('video');
+                var canvas = document.querySelector('canvas');
+                var ctx = canvas.getContext('2d');
+                var localMediaStream = null;
+
+                function snapshot() {
+                    if (localMediaStream) {
+                    ctx.drawImage(video, 0, 0);
+                    // "image/webp" works in Chrome.
+                    // Other browsers will fall back to image/png.
+                    document.querySelector('img').src = canvas.toDataURL('image/webp');
+                    }
+                }
+
+                video.addEventListener('click', snapshot, false);
+
+                // Not showing vendor prefixes or code that works cross-browser.
+                navigator.getUserMedia({video: true}, function(stream) {
+                    video.src = window.URL.createObjectURL(stream);
+                    localMediaStream = stream;
+                }, function(){});
+                </script>
             </div>
 
 
