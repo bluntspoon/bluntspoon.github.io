@@ -33,7 +33,7 @@
             var hash = window.location.hash;
              pageDirect(hash);
             //$("#home").show();
-            $("a").click(function(e){
+            $("a.page").click(function(e){
                     var contentId = $(this).attr('href');
                    pageDirect(contentId);
               });
@@ -94,14 +94,12 @@
 		    </span>
 
             <nav class="demo-navigation mdl-navigation">
-                <a class="mdl-navigation__link" href="#home"><i class="material-icons" role="presentation">home</i>Home</a>
-                <a class="mdl-navigation__link" href="#about"><i class="material-icons" role="presentation">info</i>About</a>
-                <a class="mdl-navigation__link" href="#how-to"><i class="material-icons" role="presentation">question_answer</i>How To</a>
-                <a class="mdl-navigation__link" href="#scan"><i class="material-icons" role="presentation">crop_free</i>Scanner</a>
-                <a class="mdl-navigation__link" href="#login"><i class="material-icons" role="presentation">person</i>Log In</a>
-                <a class="mdl-navigation__link" href="#contact"><i class="material-icons" role="presentation">contact_mail</i>Contact Us</a>
-                <div class="mdl-layout-spacer"></div>
-                <!--<a class="mdl-navigation__link" href="#help"><i class="material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>-->
+                <a class="mdl-navigation__link page" href="#home"><i class="material-icons" role="presentation">home</i>Home</a>
+                <a class="mdl-navigation__link page" href="#about"><i class="material-icons" role="presentation">info</i>About</a>
+                <a class="mdl-navigation__link page" href="#how-to"><i class="material-icons" role="presentation">question_answer</i>How To</a>
+                <a class="mdl-navigation__link page" href="#scan"><i class="material-icons" role="presentation">crop_free</i>Scanner</a>
+                <a class="mdl-navigation__link page" href="#login"><i class="material-icons" role="presentation">person</i>Log In</a>
+                <a class="mdl-navigation__link page" href="#contact"><i class="material-icons" role="presentation">contact_mail</i>Contact Us</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -116,7 +114,7 @@
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#launch">Learn More</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect page" href="#launch">Learn More</a>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--4-col card-lesson mdl-card mdl-shadow--2dp">
@@ -128,7 +126,7 @@
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
                         <div class="mdl-layout-spacer"></div>
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#rewards">Learn More</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect page" href="#rewards">Learn More</a>
                     </div>
                 </div>
             </div>
