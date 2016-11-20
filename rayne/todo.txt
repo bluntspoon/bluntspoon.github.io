@@ -1,9 +1,10 @@
-- favicon
-- Home pages
+
+- Home pages - Done
+- How to - Done
+- Contact us - Done
+
 - Login redirect
-- How to
+- favicon
 - Admin
 - Scanner
-- Contact us
-- Help
 - footer
