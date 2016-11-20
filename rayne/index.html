@@ -8,19 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Paper Plain</title>
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Paper Plain">
-  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
-
-
-  <link rel="shortcut icon" href="images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -30,11 +17,11 @@
   crossorigin="anonymous"></script>
 <style>
 html{
-    background: url('images/wallpaper.jpg') center / cover;
+    background: url('content/images/wallpaper.jpg') center / cover;
 }
 #load {
     position: absolute;
-    background: url('images/loader.gif') no-repeat center center;
+    background: url('content/images/loader.gif') no-repeat center center;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,7 +37,7 @@ html{
   <script>
 
 $(document).ready(function() {
-    loadingScreen(3000);
+    loadingScreen(5000);
     $("body").css("display", "none");
  
     $("body").fadeIn(1000);

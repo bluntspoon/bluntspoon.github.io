@@ -4,7 +4,12 @@
 - Contact us - Done
 - favicon - Done
 
-- Login redirect
+
 - Admin
 - Scanner
 - footer
+- Profile
+
+- Login redirect
+- User -> Profile
+- Admin -> QR Code

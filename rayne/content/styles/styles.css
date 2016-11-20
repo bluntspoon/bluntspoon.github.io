@@ -237,6 +237,11 @@ position: fixed;
    padding-left: 30px;
 }
 
+#login> p{
+ padding-top: 5px;
+   padding-left: 120px;
+}
+
 #launch > .first-launch{
   background: url('../images/bags.jpg') center / cover;
   height: 200px;
@@ -252,6 +257,10 @@ p.strong{
 }
 
 #login > .svg{
+  padding-bottom: 5px;
+}
+
+#admin-login > .svg{
   padding-bottom: 5px;
 }
 
