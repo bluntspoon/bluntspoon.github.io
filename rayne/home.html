@@ -199,7 +199,7 @@
               <!--Scan-->
             <div id="scan" class="page-content" style="display:none">
                <video autoplay></video>
-                <img src="">
+                <img id="capture" src="">
                 <canvas style="display:none;"></canvas>
 
                 <script>
@@ -213,7 +213,7 @@
                     ctx.drawImage(video, 0, 0);
                     // "image/webp" works in Chrome.
                     // Other browsers will fall back to image/png.
-                    document.querySelector('img').src = canvas.toDataURL('image/webp');
+                    $("#capture").attr("src", canvas.toDataURL('image/webp'));
                     }
                 }
 
