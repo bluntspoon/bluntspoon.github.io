@@ -242,5 +242,14 @@ position: fixed;
   height: 200px;
 }
 
+#rewards > .incentive-programme{
+  background: url('../images/cash.jpg') center / cover;
+  height: 200px;
+}
+
+p.strong{
+  font-weight: 800;
+}
+
 
 
