@@ -397,3 +397,15 @@ line-height: 80px;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+
+#desktop {
+	color: #fff;
+  text-transform: uppercase;
+  background-color: #0D9789;
+  height: 2000px;
+}
+.welcome{
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+}
