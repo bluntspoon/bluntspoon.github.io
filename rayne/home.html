@@ -28,7 +28,80 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="content/styles/styles.css">
- 
+
+    <script src="libs/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+        }
+
+
+        if(isMobile)
+        {           $("#desktop").css("display", "none");
+                    $("body").css("display", "none");
+                    $("body").fadeIn(1000);
+                    var hash = window.location.hash;
+                    pageDirect(hash);
+                    //$("#home").show();
+                    $("a.page").click(function(e){
+                            var contentId = $(this).attr('href');
+                        pageDirect(contentId);
+                    });
+                        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+                        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+                        this.classList.remove('is-visible');
+                        }, false);
+
+                        function pageDirect(contentId){
+                            if(contentId.length == 0)
+                            {
+                                contentId = "#home"
+                            }
+                            if(contentId === "#how-to" ||
+                            contentId === "#contact" ||
+                            contentId === "#login" ||
+                            contentId === "#launch"||
+                            contentId === "#login"||
+                            contentId === "#rewards"||
+                            contentId === "#admin-login"||
+                            contentId === "#profile"||
+                            contentId === "#about"||
+                            contentId === "#register"||
+                            contentId === "#admin-scan"||
+                            contentId === "#scan"
+                            
+                            ){
+                                $(".mdl-layout").css("background-color", "#80C8C2");
+                            }else
+                            {
+                                $(".mdl-layout").css("background-color", "#fff");
+                            }
+                            
+                            $("#rewards").hide(); 
+                            $("#launch").hide(); 
+                            $("#how-to").hide(); 
+                            $("#about").hide(); 
+                            $("#home").hide(); 
+                            $("#login").hide(); 
+                            $("#contact").hide(); 
+                            $("#scan").hide(); 
+                            $("#admin-login").hide(); 
+                            $("#profile").hide();
+                            $("#register").hide();  
+                            $("#admin-scan").hide();  
+                            $(contentId).fadeIn(1000);
+                        }
+        }
+        else{
+            $("#mobile").css("display", "none");
+             $(".mdl-layout").css("background-color", "#80C8C2");
+            $("body").fadeIn(1000);
+        }
+
+    });
+</script>
 </head>
 
 <body style="display:none">
@@ -48,11 +121,10 @@
             </div>
         </header>
         <div id="menu" class="demo-drawer mdl-layout__drawer">
-
-            <span class="mdl-layout-title">  <img src="content/images/plain-01.png" class="demo-avatar">
+            <span class="mdl-layout-title">  
+                <img src="content/images/plain-01.png" class="demo-avatar">
 		        PAPER <b>PLAIN</b>
 		    </span>
-
             <nav class="demo-navigation mdl-navigation">
                 <a class="mdl-navigation__link page" href="#home"><i class="material-icons" role="presentation">home</i>Home</a>
                 <a class="mdl-navigation__link page" href="#about"><i class="material-icons" role="presentation">info</i>About</a>
@@ -60,6 +132,14 @@
                 <a class="mdl-navigation__link page" href="#scan"><i class="material-icons" role="presentation">crop_free</i>Scanner</a>
                 <a class="mdl-navigation__link page" href="#login"><i class="material-icons" role="presentation">person</i>Log In</a>
                 <a class="mdl-navigation__link page" href="#contact"><i class="material-icons" role="presentation">contact_mail</i>Contact Us</a>
+                <div class="mdl-layout-spacer"></div>
+                <div class="footer">
+                    <div class="social">
+                        <button class="mdl-mini-footer__social-btn facebook"></button>
+                        <button class="mdl-mini-footer__social-btn instagram"></button>
+                    </div>
+                    Copyright © 2016 PAPER PLAIN
+                </div>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -127,15 +207,19 @@
             <!--Profile-->
             <div id="profile" class="page-content" style="display:none">
                 <div class="status">
-                     <button class="mdl-mini-footer__social-btn facebook"></button>
+                    <button class="mdl-mini-footer__social-btn facebook"></button>
                 </div>
                 <div id="profile-text">
-                    <p>Well done on all your paper recycling efforts! You are now in the active recycler category. Active recyclers receive a 20% off Kulula airlines flight voucher.</p> 
-                    <p>Remember to carry on collecting and dropping off your paper waste. Each visit to the recycling centre works out to be 1 point! These points can be redeemed at any stage, or collected and accumulated in order to receive STAR recycler status. Star recyclers receive a 50% of Kulula airlines flight voucher. These vouchers can then be further accumulated to receive 100% free Kulula airlines flights!</p> 
-                    <p>If that doesn't fly your plane, we don't know what will.</p> 
+                    <p>Well done on all your paper recycling efforts! You are now in the active recycler category. Active recyclers
+                        receive a 20% off Kulula airlines flight voucher.</p>
+                    <p>Remember to carry on collecting and dropping off your paper waste. Each visit to the recycling centre
+                        works out to be 1 point! These points can be redeemed at any stage, or collected and accumulated
+                        in order to receive STAR recycler status. Star recyclers receive a 50% of Kulula airlines flight
+                        voucher. These vouchers can then be further accumulated to receive 100% free Kulula airlines flights!</p>
+                    <p>If that doesn't fly your plane, we don't know what will.</p>
                     <br/>
                 </div>
-               
+
             </div>
 
             <!--Login-->
@@ -155,15 +239,15 @@
                             </div>
                         </form>
                     </div>
-                   <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-card__actions mdl-card--border">
                         <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#profile">Log in</a>
-                         <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#register">Register</a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#register">Register</a>
                     </div>
                 </div>
                 <p><a class="page" href="#admin-login">Admin Login</a></p>
             </div>
 
-               <!--Register-->
+            <!--Register-->
             <div id="register" class="page-content" style="display:none">
                 <img src="content/images/register.svg" width="100%" height="100" alt="">
                 <br/>
@@ -178,7 +262,7 @@
                                 <input class="mdl-textfield__input" type="text" id="surname" />
                                 <label class="mdl-textfield__label" for="name">Surname</label>
                             </div>
-                             <div class="mdl-textfield mdl-js-textfield">
+                            <div class="mdl-textfield mdl-js-textfield">
                                 <input class="mdl-textfield__input" type="text" id="email" />
                                 <label class="mdl-textfield__label" for="name">Email</label>
                             </div>
@@ -190,11 +274,11 @@
                                 <input class="mdl-textfield__input" type="password" id="confirmpass" />
                                 <label class="mdl-textfield__label" for="confirmpass">Confirm Password</label>
                             </div>
-                           
+
                         </form>
                     </div>
-                   <div class="mdl-card__actions mdl-card--border">
-                         <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#profile">Register</a>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#profile">Register</a>
                     </div>
                 </div>
             </div>
@@ -217,7 +301,7 @@
                         </form>
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#scan">Log in</a>
+                        <a class="mdl-button mdl-js-button mdl-js-ripple-effect page" href="#admin-scan">Log in</a>
                     </div>
                 </div>
             </div>
@@ -225,37 +309,16 @@
             <!--Scan-->
             <div id="scan" class="page-content" style="display:none">
                 <div class="scan">
-                      <img src="content/images/scan.svg" alt="scan" width="300" height="400">
+                    <img src="content/images/scan.svg" alt="scan" width="300" height="400">
                     <div class="item-overlay top"></div>
                 </div>
                 <div class="tapscan"></div>
-                <!--<video autoplay></video>
-                <img id="capture" src="">
-                <canvas style="display:none;"></canvas>
+            </div>
 
-                <script>
-                var video = document.querySelector('video');
-                var canvas = document.querySelector('canvas');
-                var ctx = canvas.getContext('2d');
-                var localMediaStream = null;
-
-                function snapshot() {
-                    if (localMediaStream) {
-                    ctx.drawImage(video, 0, 0);
-                    // "image/webp" works in Chrome.
-                    // Other browsers will fall back to image/png.
-                    $("#capture").attr("src", canvas.toDataURL('image/webp'));
-                    }
-                }
-
-                video.addEventListener('click', snapshot, false);
-
-                // Not showing vendor prefixes or code that works cross-browser.
-                navigator.getUserMedia({video: true}, function(stream) {
-                    video.src = window.URL.createObjectURL(stream);
-                    localMediaStream = stream;
-                }, function(){});
-                </script>-->
+            <!--Admin Scan-->
+            <div id="admin-scan" class="page-content" style="display:none">
+                <img id="qrcode" src="content/images/qrcode.png" width="250" height="250">
+                <div>SCAN TO RECEIVE REWARDS</div>
             </div>
 
             <!--About-->
@@ -310,19 +373,6 @@
                 <p>(031) 266 3679 | Westville Civic Centre</p>
             </div>
         </main>
-        <!--<footer class="mdl-mini-footer">
-            <div class="mdl-mini-footer__left-section">
-                <div class="mdl-logo">
-                    Copyright © 2016 PAPER PLAIN
-                </div>
-
-            </div>
-            <div class="mdl-mini-footer__right-section">
-                <button class="mdl-mini-footer__social-btn facebook"></button>
-                <button class="mdl-mini-footer__social-btn instagram"></button>
-
-            </div>
-        </footer>-->
     </div>
     <div id="desktop" class="demo-layout mdl-layout mdl-js-layout
                 mdl-layout--fixed-header">
@@ -354,80 +404,5 @@
             </div>
         </footer>
     </div>
-
-    <script src="libs/jquery/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        var isMobile = false;
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        isMobile = true;
-        }
-
-
-        if(isMobile)
-        {           $("#desktop").css("display", "none");
-                    $("body").css("display", "none");
-                    $("body").fadeIn(1000);
-                    var hash = window.location.hash;
-                    pageDirect(hash);
-                    //$("#home").show();
-                    $("a.page").click(function(e){
-                            var contentId = $(this).attr('href');
-                        pageDirect(contentId);
-                    });
-                        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
-                        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
-                        this.classList.remove('is-visible');
-                        }, false);
-
-                        function pageDirect(contentId){
-                            if(contentId.length == 0)
-                            {
-                                contentId = "#home"
-                            }
-                            if(contentId === "#how-to" ||
-                            contentId === "#contact" ||
-                            contentId === "#login" ||
-                            contentId === "#launch"||
-                            contentId === "#login"||
-                            contentId === "#rewards"||
-                            contentId === "#admin-login"||
-                            contentId === "#profile"||
-                            contentId === "#about"||
-                            contentId === "#register"||
-                            contentId === "#scan"
-                            
-                            ){
-                                $(".mdl-layout").css("background-color", "#80C8C2");
-                            }else
-                            {
-                                $(".mdl-layout").css("background-color", "#fff");
-                            }
-                            
-                            $("#rewards").hide(); 
-                            $("#launch").hide(); 
-                            $("#how-to").hide(); 
-                            $("#about").hide(); 
-                            $("#home").hide(); 
-                            $("#login").hide(); 
-                            $("#contact").hide(); 
-                            $("#scan").hide(); 
-                            $("#admin-login").hide(); 
-                            $("#profile").hide();
-                            $("#register").hide();  
-                            $(contentId).fadeIn(1000);
-                        }
-        }
-        else{
-            $("#mobile").css("display", "none");
-             $(".mdl-layout").css("background-color", "#80C8C2");
-            $("body").fadeIn(1000);
-        }
-
-    });
-</script>
-
-
 </body>
-
 </html>

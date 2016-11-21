@@ -269,6 +269,29 @@ p.strong{
   padding-bottom: 5px;
 }
 
+.footer{
+  font-size: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.footer .facebook{
+   background-size: 20px 20px;
+   width: 20px; 
+   height: 20px;
+}
+.footer .instagram{
+   background-size: 20px 20px;
+   width: 20px; 
+   height: 20px;
+   padding-left:10px 
+}
+
+.footer .social{
+  position: absolute; right: 5px; bottom: 5px; 
+}
+
 .mdl-mini-footer{
   background: url('../images/wallpaper.jpg') center / cover;
   padding: 10px 5px;
@@ -334,14 +357,16 @@ p.strong{
     margin-right: auto
 }
 
-/*.scan{
-  background: url(../images/scan.svg) center / cover;
-   background-size:300px 400px;
-   
-  width:300px;
-    height:400px;
- 
-}*/
+#admin-scan #qrcode{
+  padding-top: 50px;
+}
+
+#admin-scan div{
+font-size: 20px;
+font-weight: 900;
+ color: #0D4D40;
+line-height: 80px;
+}
 
 .tapscan{
   background: url(../images/tapscan.svg);
