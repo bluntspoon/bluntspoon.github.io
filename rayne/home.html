@@ -29,77 +29,6 @@
 
     <link rel="stylesheet" href="content/styles/styles.css">
  
-    <script src="libs/jquery/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        var isMobile = false;
-        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        isMobile = true;
-        }
-
-
-        if(isMobile)
-        {           $("#desktop").css("display", "none");
-                    $("body").css("display", "none");
-                    $("body").fadeIn(1000);
-                    var hash = window.location.hash;
-                    pageDirect(hash);
-                    //$("#home").show();
-                    $("a.page").click(function(e){
-                            var contentId = $(this).attr('href');
-                        pageDirect(contentId);
-                    });
-                        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
-                        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
-                        this.classList.remove('is-visible');
-                        }, false);
-
-                        function pageDirect(contentId){
-                            if(contentId.length == 0)
-                            {
-                                contentId = "#home"
-                            }
-                            if(contentId === "#how-to" ||
-                            contentId === "#contact" ||
-                            contentId === "#login" ||
-                            contentId === "#launch"||
-                            contentId === "#login"||
-                            contentId === "#rewards"||
-                            contentId === "#admin-login"||
-                            contentId === "#profile"||
-                            contentId === "#about"||
-                            contentId === "#register"||
-                            contentId === "#scan"
-                            
-                            ){
-                                $(".mdl-layout").css("background-color", "#80C8C2");
-                            }else
-                            {
-                                $(".mdl-layout").css("background-color", "#fff");
-                            }
-                            
-                            $("#rewards").hide(); 
-                            $("#launch").hide(); 
-                            $("#how-to").hide(); 
-                            $("#about").hide(); 
-                            $("#home").hide(); 
-                            $("#login").hide(); 
-                            $("#contact").hide(); 
-                            $("#scan").hide(); 
-                            $("#admin-login").hide(); 
-                            $("#profile").hide();
-                            $("#register").hide();  
-                            $(contentId).fadeIn(1000);
-                        }
-        }
-        else{
-            $("#mobile").css("display", "none");
-             $(".mdl-layout").css("background-color", "#80C8C2");
-            $("body").fadeIn(1000);
-        }
-
-    });
-</script>
 </head>
 
 <body style="display:none">
@@ -347,7 +276,7 @@
                 <img class="svg grpelem" id="how-to" src="content/images/handbook.svg" width="100%" height="200" alt="" data-mu-svgfallback="content/images/handbook_svg.jpg">
                 <p>We have compiled a handy guide to assist you with your recycling. Click on the download link below to familarise
                     yourself with some basic paper recycling practises before you visit the Paper Plain recycling centre.</p>
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.raynedear.com/paperplain/assets/paper-plain-handbook.pdf">Download</a>
+                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://paper-plain.co.za/content/paper-plain-handbook.pdf">Download</a>
             </div>
 
             <!--Contact-Us-->
@@ -377,7 +306,7 @@
                 <p>(031) 266 3679 | Westville Civic Centre</p>
             </div>
         </main>
-        <footer class="mdl-mini-footer">
+        <!--<footer class="mdl-mini-footer">
             <div class="mdl-mini-footer__left-section">
                 <div class="mdl-logo">
                     Copyright © 2016 PAPER PLAIN
@@ -389,7 +318,7 @@
                 <button class="mdl-mini-footer__social-btn instagram"></button>
 
             </div>
-        </footer>
+        </footer>-->
     </div>
     <div id="desktop" class="demo-layout mdl-layout mdl-js-layout
                 mdl-layout--fixed-header">
@@ -422,6 +351,77 @@
         </footer>
     </div>
 
+    <script src="libs/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+        }
+
+
+        if(isMobile)
+        {           $("#desktop").css("display", "none");
+                    $("body").css("display", "none");
+                    $("body").fadeIn(1000);
+                    var hash = window.location.hash;
+                    pageDirect(hash);
+                    //$("#home").show();
+                    $("a.page").click(function(e){
+                            var contentId = $(this).attr('href');
+                        pageDirect(contentId);
+                    });
+                        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+                        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+                        this.classList.remove('is-visible');
+                        }, false);
+
+                        function pageDirect(contentId){
+                            if(contentId.length == 0)
+                            {
+                                contentId = "#home"
+                            }
+                            if(contentId === "#how-to" ||
+                            contentId === "#contact" ||
+                            contentId === "#login" ||
+                            contentId === "#launch"||
+                            contentId === "#login"||
+                            contentId === "#rewards"||
+                            contentId === "#admin-login"||
+                            contentId === "#profile"||
+                            contentId === "#about"||
+                            contentId === "#register"||
+                            contentId === "#scan"
+                            
+                            ){
+                                $(".mdl-layout").css("background-color", "#80C8C2");
+                            }else
+                            {
+                                $(".mdl-layout").css("background-color", "#fff");
+                            }
+                            
+                            $("#rewards").hide(); 
+                            $("#launch").hide(); 
+                            $("#how-to").hide(); 
+                            $("#about").hide(); 
+                            $("#home").hide(); 
+                            $("#login").hide(); 
+                            $("#contact").hide(); 
+                            $("#scan").hide(); 
+                            $("#admin-login").hide(); 
+                            $("#profile").hide();
+                            $("#register").hide();  
+                            $(contentId).fadeIn(1000);
+                        }
+        }
+        else{
+            $("#mobile").css("display", "none");
+             $(".mdl-layout").css("background-color", "#80C8C2");
+            $("body").fadeIn(1000);
+        }
+
+    });
+</script>
 
 
 </body>
