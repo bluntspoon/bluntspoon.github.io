@@ -334,3 +334,41 @@ p.strong{
     margin-right: auto
 }
 
+/*.scan{
+  background: url(../images/scan.svg) center / cover;
+   background-size:300px 400px;
+   
+  width:300px;
+    height:400px;
+ 
+}*/
+
+.tapscan{
+  background: url(../images/tapscan.svg);
+   background-size: 300px 100px;
+  
+  width: 300px;
+    height: 100px;
+    position: relative;
+}
+
+
+.scan {
+  position: relative;
+  
+  border: 1px solid #333;
+  overflow: hidden;
+  width: 300px;
+}
+.scan img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.scan:hover img {
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
