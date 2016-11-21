@@ -252,6 +252,11 @@ position: fixed;
   height: 200px;
 }
 
+#about > .recycling-centre{
+  background: url('../images/recycling_centre.jpg') center / cover;
+  height: 200px;
+}
+
 p.strong{
   font-weight: 800;
 }
@@ -295,6 +300,33 @@ p.strong{
   width: 712px;
     height: 274px;
 }
+
+.status{
+  background: url(../images/status.svg);
+   background-size: 350px 250px;
+   background-color: #863b8f;
+  width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+.status .facebook{
+    background: url(../images/facebook.svg);
+  background-size: 30px 30px;
+ position: absolute; right: 5px; bottom: 5px; 
+ width: 30px; 
+ height: 30px;
+ 
+}
+
+#profile-text{
+   width: 350px;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    padding-top: 10px;
+}
+
 
 #qrcode{
   display: block;

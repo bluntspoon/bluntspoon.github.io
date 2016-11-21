@@ -5,11 +5,12 @@
 - favicon - Done
 
 - Desktop - Done
-- Admin
+- Admin - Done
 - Scanner
 - footer - Done
-- Profile
+- Profile - Done
+- Register
 
-- Login redirect
-- User -> Profile
-- Admin -> QR Code
+- Login redirect (enter text>)
+- User -> Profile - Done
+- Admin -> QR Code - Done
