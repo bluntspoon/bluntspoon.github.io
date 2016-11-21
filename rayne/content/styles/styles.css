@@ -264,5 +264,41 @@ p.strong{
   padding-bottom: 5px;
 }
 
+.mdl-mini-footer{
+  background: url('../images/wallpaper.jpg') center / cover;
+  padding: 10px 5px;
+  width: 100%;
+}
 
+.mdl-mini-footer .mdl-logo{
+ padding-left: 10px;
+ margin-bottom: 0px;
+}
+
+.mdl-mini-footer--right-section, .mdl-mini-footer__right-section{
+ padding-right: 10px;
+}
+
+.facebook{
+  background: url(../images/facebook.svg);
+  background-size: 36px 36px;
+}
+
+.instagram{
+  background: url(../images/instagram.svg);
+  background-size: 36px 36px;
+}
+
+.welcome{
+  background: url(../images/welcome.svg);
+  background-size: 712px 274px;
+  width: 712px;
+    height: 274px;
+}
+
+#qrcode{
+  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 

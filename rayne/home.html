@@ -30,64 +30,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="content/styles/styles.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-            $("body").css("display", "none");
-            $("body").fadeIn(1000);
-            var hash = window.location.hash;
-             pageDirect(hash);
-            //$("#home").show();
-            $("a.page").click(function(e){
-                    var contentId = $(this).attr('href');
-                   pageDirect(contentId);
-              });
-                 document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
-                 document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
-                this.classList.remove('is-visible');
-                }, false);
-
-                function pageDirect(contentId){
-                    if(contentId.length == 0)
-                    {
-                        contentId = "#home"
-                    }
-                    if(contentId === "#how-to" ||
-                       contentId === "#contact" ||
-                       contentId === "#login" ||
-                       contentId === "#launch"||
-                       contentId === "#login"||
-                       contentId === "#rewards"||
-                       contentId === "#admin-login"||
-                       contentId === "#profile"||
-                       contentId === "#scan"
-                       
-                    ){
-                        $(".mdl-layout").css("background-color", "#80C8C2");
-                    }else
-                    {
-                        $(".mdl-layout").css("background-color", "#fff");
-                    }
-                    
-                    $("#rewards").hide(); 
-                    $("#launch").hide(); 
-                    $("#how-to").hide(); 
-                    $("#about").hide(); 
-                    $("#home").hide(); 
-                    $("#login").hide(); 
-                    $("#contact").hide(); 
-                    $("#scan").hide(); 
-                    $("#admin-login").hide(); 
-                    $(contentId).fadeIn(1000);
-                }
-
-    });
-</script>
+ 
 </head>
 
 <body style="display:none">
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+
+    <div id="mobile" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer
                 mdl-layout--fixed-header">
         <header class="demo-header mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -97,12 +45,12 @@
                 </span>
 
                 <div class="mdl-layout-spacer"></div>
-                <a class="mdl-navigation__link page" href="#scan"> 
+                <a class="mdl-navigation__link page" href="#scan">
                     <img src="content/images/plain-01.png" class="demo-avatar">
                 </a>
             </div>
         </header>
-        <div class="demo-drawer mdl-layout__drawer">
+        <div id="menu" class="demo-drawer mdl-layout__drawer">
 
             <span class="mdl-layout-title">  <img src="content/images/plain-01.png" class="demo-avatar">
 		        PAPER <b>PLAIN</b>
@@ -203,7 +151,7 @@
                 <p><a class="page" href="#admin-login">Admin Login</a></p>
             </div>
 
-              <!--Admin Login-->
+            <!--Admin Login-->
             <div id="admin-login" class="page-content" style="display:none">
                 <img class="svg" id="admin-login" src="content/images/admin-login.svg" width="100%" height="100" alt="">
                 <br/>
@@ -318,7 +266,123 @@
                 <p>(031) 266 3679 | Westville Civic Centre</p>
             </div>
         </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">
+                    Copyright © 2016 PAPER PLAIN
+                </div>
+
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <button class="mdl-mini-footer__social-btn facebook"></button>
+                <button class="mdl-mini-footer__social-btn instagram"></button>
+
+            </div>
+        </footer>
     </div>
+    <div id="desktop" class="demo-layout mdl-layout mdl-js-layout
+                mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <span class="mdl-layout-title">
+                   <a class="mdl-navigation__link page" href="#home"> PAPER <b>PLAIN</b></a>
+                </span>
+
+                <div class="mdl-layout-spacer"></div>
+                    <img src="content/images/plain-01.png" class="demo-avatar">
+                </a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+          <div class="welcome"></div>
+          <img id="qrcode" src="content/images/qrcode.png">
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">
+                    Copyright © 2016 PAPER PLAIN
+                </div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <button class="mdl-mini-footer__social-btn facebook"></button>
+                <button class="mdl-mini-footer__social-btn instagram"></button>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+   <script src="libs/jquery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var isMobile = false;
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        isMobile = true;
+        }
+
+
+        if(isMobile)
+        {           $("#desktop").css("display", "none");
+                    $("body").css("display", "none");
+                    $("body").fadeIn(1000);
+                    var hash = window.location.hash;
+                    pageDirect(hash);
+                    //$("#home").show();
+                    $("a.page").click(function(e){
+                            var contentId = $(this).attr('href');
+                        pageDirect(contentId);
+                    });
+                        document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+                        document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+                        this.classList.remove('is-visible');
+                        }, false);
+
+                        function pageDirect(contentId){
+                            if(contentId.length == 0)
+                            {
+                                contentId = "#home"
+                            }
+                            if(contentId === "#how-to" ||
+                            contentId === "#contact" ||
+                            contentId === "#login" ||
+                            contentId === "#launch"||
+                            contentId === "#login"||
+                            contentId === "#rewards"||
+                            contentId === "#admin-login"||
+                            contentId === "#profile"||
+                            contentId === "#scan"
+                            
+                            ){
+                                $(".mdl-layout").css("background-color", "#80C8C2");
+                            }else
+                            {
+                                $(".mdl-layout").css("background-color", "#fff");
+                            }
+                            
+                            $("#rewards").hide(); 
+                            $("#launch").hide(); 
+                            $("#how-to").hide(); 
+                            $("#about").hide(); 
+                            $("#home").hide(); 
+                            $("#login").hide(); 
+                            $("#contact").hide(); 
+                            $("#scan").hide(); 
+                            $("#admin-login").hide(); 
+                            $(contentId).fadeIn(1000);
+                        }
+        }
+        else{
+            $("#mobile").css("display", "none");
+             $(".mdl-layout").css("background-color", "#80C8C2");
+            $("body").fadeIn(1000);
+        }
+
+    });
+</script>
+
+
 </body>
 
 </html>

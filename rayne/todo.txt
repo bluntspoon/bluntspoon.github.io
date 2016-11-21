@@ -4,10 +4,10 @@
 - Contact us - Done
 - favicon - Done
 
-
+- Desktop - Done
 - Admin
 - Scanner
-- footer
+- footer - Done
 - Profile
 
 - Login redirect
