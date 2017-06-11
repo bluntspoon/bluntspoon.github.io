@@ -21,7 +21,7 @@
 		
 		// Remove "loading" class once the page has fully loaded.
 			window.onload = function() {
-				document.body.className = '';
+				document.getElementById("preloader").remove();
 			}
 
 		// Prevent scrolling on touch.

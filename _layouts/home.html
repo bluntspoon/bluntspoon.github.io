@@ -45,11 +45,15 @@
   <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/manifest.json">
+  <style>
+    div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
 
+    </style>
   <link rel="stylesheet" href="/css/main-layout.css">
 </head>
 
 <body class="loading">
+   <div id="preloader"></div>
   <div id="wrapper">
     <div id="bg"></div>
     <div id="overlay"></div>
