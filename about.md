@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Andrew Bevan - About
+title: About
 permalink: /about/
 ---
 

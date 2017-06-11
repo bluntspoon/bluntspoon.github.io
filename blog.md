@@ -1,5 +1,5 @@
 ---
 layout: blog
-title: Andrew Bevan - Blog
+title: Blog
 permalink: /blog/
 ---
