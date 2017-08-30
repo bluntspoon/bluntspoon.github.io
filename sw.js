@@ -4,14 +4,31 @@ var CACHE_NAME = 'cache-v1';
 var urlsToCache = [
   '/',
   '/index.html',
+  '/favicon/manifest.json',
+  '/css/typography.css',
+  '/css/font-awesome.min.css',
+  '/css/main.css',
+  '/css/main-layout.css',
+  '/css/skel.css',
+  '/css/style.css',
+  '/css/style-mobile.css',
+  '/css/style-mobilep.css',
+  '/css/style-normal.css',
+  '/css/style-noscript.css',
+  '/css/style-wide.css',
   '/css/main-layout.css',
   '/css/style.css',
   '/css/images/bg.jpg',
+  '/css/images/overlay-pattern.png',
+  '/css/images/overlay.svg',
   '/assets/images/andrew-bevan.png',
   '/js/skel.min.js',
   '/js/init.js',
-  '/favicon/manifest.json'
+  '/js/html5shiv.js'
 ];
+
+
+
 
 
 self.addEventListener('install', function (event) {
