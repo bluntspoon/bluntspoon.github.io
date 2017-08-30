@@ -22,6 +22,9 @@ var urlsToCache = [
   '/css/images/overlay-pattern.png',
   '/css/images/overlay.svg',
   '/assets/images/andrew-bevan.png',
+  '/fonts/fontawesome-webfont.woff?v=4.3.0',
+  '/fonts/fontawesome-webfont.woff2?v=4.3.0',
+  '/fonts/fontawesome-webfont.ttf?v=4.3.0',
   '/js/skel.min.js',
   '/js/init.js',
   '/js/html5shiv.js'
