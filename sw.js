@@ -5,7 +5,6 @@ self.addEventListener('install', function(event) {
           '/',
           '/index.html',
           '/css/style.css',
-          '/css/images/',
           '/css/images/bg.jpg'        
         ]);
       })
@@ -13,4 +12,3 @@ self.addEventListener('install', function(event) {
   });
 
 
-  
