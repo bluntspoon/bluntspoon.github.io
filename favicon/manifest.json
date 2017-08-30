@@ -3,6 +3,7 @@
  "short_name":"Andrew Bevan",
  "start_url": "/?utm_source=homescreen",
  "background_color": "#5fa4c2",
+ "theme_color": "#5fa4c2",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
