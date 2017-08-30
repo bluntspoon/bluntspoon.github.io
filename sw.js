@@ -5,7 +5,7 @@ var urlsToCache = [
   '/',
   '/index.html',
   '/favicon/manifest.json',
-  
+
   '/css/typography.css',
   '/css/font-awesome.min.css',
   '/fonts/fontawesome-webfont.woff?v=4.3.0',
@@ -44,23 +44,17 @@ self.addEventListener('install', function (event) {
       return cache.addAll(urlsToCache);
     })
   );
+  event.waitUntil(self.skipWaiting());
 });
 
 
-self.addEventListener('fetch', function (event) {
-  console.log('fetch request', event.request)
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request)
-    .then(function (response) {
-      // Cache hit - return response
-      if (response) {
-        return response;
-      }
-      return fetch(event.request);
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
     })
   );
 });
-
 
 self.addEventListener('activate', function (event) {
   var cacheWhitelist = ['cache-v1', 'cache-v2'];
