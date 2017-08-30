@@ -1,4 +1,4 @@
-var CACHE_NAME = 'cache-v1';
+var CACHE_NAME = 'cache-v2';
 
 
 var urlsToCache = [
@@ -30,7 +30,8 @@ var urlsToCache = [
   
   '/js/skel.min.js',
   '/js/init.js',
-  '/js/html5shiv.js'
+  '/js/html5shiv.js',
+  '/js/offline.min.js'
 ];
 
 
