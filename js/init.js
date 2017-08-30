@@ -30,12 +30,7 @@
 
   // Remove "loading" class once the page has fully loaded.
   window.onload = function () {
-    Offline.options = {
-      checkOnLoad: true,
-      requests: false,
-      game: false
-	};
-	
+	Offline.check();
     document.body.className = '';
     document.getElementById("preloader").remove();
   }
