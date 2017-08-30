@@ -5,8 +5,13 @@ var urlsToCache = [
   '/',
   '/index.html',
   '/favicon/manifest.json',
+  
   '/css/typography.css',
   '/css/font-awesome.min.css',
+  '/fonts/fontawesome-webfont.woff?v=4.3.0',
+  '/fonts/fontawesome-webfont.woff2?v=4.3.0',
+  '/fonts/fontawesome-webfont.ttf?v=4.3.0',
+
   '/css/main.css',
   '/css/main-layout.css',
   '/css/skel.css',
@@ -22,9 +27,7 @@ var urlsToCache = [
   '/css/images/overlay-pattern.png',
   '/css/images/overlay.svg',
   '/assets/images/andrew-bevan.png',
-  '/fonts/fontawesome-webfont.woff?v=4.3.0',
-  '/fonts/fontawesome-webfont.woff2?v=4.3.0',
-  '/fonts/fontawesome-webfont.ttf?v=4.3.0',
+  
   '/js/skel.min.js',
   '/js/init.js',
   '/js/html5shiv.js'
