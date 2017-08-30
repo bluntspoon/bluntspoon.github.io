@@ -6,7 +6,9 @@ var urlsToCache = [
   '/css/style.css',
   '/css/images/bg.jpg',
   '/assets/images/andrew-bevan.png',
-  '/js/skel.min.js'
+  '/js/skel.min.js',
+  '/js/init.js',
+  '/favicon/manifest.json'
 ];
 
 
