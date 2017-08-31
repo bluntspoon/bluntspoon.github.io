@@ -4,6 +4,7 @@
     "start_url": "/?utm_source=homescreen",
     "background_color": "#5fa4c2",
     "theme_color": "#5fa4c2",
+    "display": "fullscreen"
     "icons": [
         {
             "src": "/android-chrome-192x192.png?v=yyaLEwvRMA",
