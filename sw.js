@@ -4,7 +4,7 @@ var CACHE_NAME = 'cache-v3';
 var urlsToCache = [
   '/',
   '/index.html',
-  '/favicon/manifest.json',
+  '/manifest.json',
 
   '/css/typography.css',
   '/css/font-awesome.min.css',
