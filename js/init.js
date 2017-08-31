@@ -34,15 +34,10 @@
     document.getElementById("preloader").remove();
     window.addEventListener('online',  updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
-
-
-      if (navigator.geolocation && navigator.onLine) {
+    if (navigator.geolocation && navigator.onLine) {
         getLocation();
-      } else {
-        error('Geo-Location is not supported.');
-      }
-    
-  }
+      } 
+    }
 
 function updateOnlineStatus(event) {
   if(navigator.onLine ){
