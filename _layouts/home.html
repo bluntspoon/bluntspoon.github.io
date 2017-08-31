@@ -162,7 +162,7 @@
 
   </style>
   <link rel="stylesheet" href="/css/main-layout.css">
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyB1r8IdnH386S0BBj4r2ZEtQU2mUtSIBoY&language=en&libraries=places"></script>
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkNJqtcasJBSzyGEAJfEhbwW_dP7-YD-E&language=en&libraries=places"></script>
 </head>
 
 <body>
@@ -204,7 +204,7 @@
 
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js?v1', {
+      navigator.serviceWorker.register('/sw.js?v2', {
         scope: './'
       }).then(function (registration) {
         console.log('Service worker registration succeeded:', registration);
@@ -216,8 +216,8 @@
     }
 
   </script>
-  <script src="js/skel.min.js?v=1"></script>
-  <script src="js/init.js?v=1"></script>
-  <script src="js/offline.min.js?v=1"></script>
+  <script src="js/skel.min.js?v1"></script>
+  <script src="js/init.js?v2"></script>
+  <script src="js/offline.min.js?v1"></script>
 </body>
 </html>
