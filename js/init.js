@@ -32,19 +32,24 @@
   window.onload = function () {
     document.body.className = '';
     document.getElementById("preloader").remove();
+    window.addEventListener('online',  updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
 
-    Offline.options = {
-      checkOnLoad: true,
-      requests: false,
-      game: false
-  };
-  
-  if (navigator.geolocation) {
-    getLocation();
-  } else {
-    error('Geo-Location is not supported.');
+
+      if (navigator.geolocation && navigator.onLine) {
+        getLocation();
+      } else {
+        error('Geo-Location is not supported.');
+      }
+    
   }
- 
+
+function updateOnlineStatus(event) {
+  if(navigator.onLine ){
+    document.getElementById("offline-indicator").style.display = "none";
+  }else{
+    document.getElementById("offline-indicator").style.display = "block";
+  }
 }
 
 function getLocation(){
