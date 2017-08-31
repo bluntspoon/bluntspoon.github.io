@@ -200,7 +200,9 @@
           </ul>
         </nav>
       </header>
-      <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>Lat:<span id="startLat"></span>Lon:<span id="startLon"></span></footer>
+      <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
+        <div>Lat:<span id="startLat"></span>Lon:<span id="startLon"></span></div>
+      </footer>
     </div>
   </div>
 
@@ -216,10 +218,6 @@
     } else {
       console.log('Service workers are not supported.');
     }
-
-    window.onload = function() {
-      
-    };
 
   </script>
   <script src="js/skel.min.js?v=1"></script>
