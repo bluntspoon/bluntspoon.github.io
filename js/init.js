@@ -30,11 +30,21 @@
 
   // Remove "loading" class once the page has fully loaded.
   window.onload = function () {
+
+
     Offline.options = {
       checkOnLoad: true,
       requests: false,
       game: false
-	};
+  };
+  
+  var startPos;
+  var geoSuccess = function(position) {
+    startPos = position;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+  };
+  navigator.geolocation.getCurrentPosition(geoSuccess);
 	
     document.body.className = '';
     document.getElementById("preloader").remove();
