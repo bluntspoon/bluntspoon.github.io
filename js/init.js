@@ -30,7 +30,8 @@
 
   // Remove "loading" class once the page has fully loaded.
   window.onload = function () {
-
+    document.body.className = '';
+    document.getElementById("preloader").remove();
 
     Offline.options = {
       checkOnLoad: true,
@@ -38,17 +39,58 @@
       game: false
   };
   
+  if (navigator.geolocation) {
+    getLocation();
+  } else {
+    error('Geo-Location is not supported.');
+  }
+ 
+}
+
+function getLocation(){
   var startPos;
   var geoSuccess = function(position) {
     startPos = position;
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+
+    var latlng = new google.maps.LatLng(startPos.coords.latitude,startPos.coords.longitude);
+    
+        geocoder.geocode({
+            latLng: latlng
+        }, function(results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
+                if (results[0]) {
+                   
+                    alert(results[0].formatted_address);
+                  
+                }
+            } else {
+              
+              alert(trans.NoResolvedAddress);
+            }
+        });
+
   };
+  
+  
   navigator.geolocation.getCurrentPosition(geoSuccess);
+
+   
+ 
 	
-    document.body.className = '';
-    document.getElementById("preloader").remove();
+
   }
+
+
+function error(msg) {
+  alert("Sorry: " + msg);
+  // var s = document.querySelector('#status');
+  // s.innerHTML = typeof msg == 'string' ? msg : "failed";
+  // s.className = 'fail';
+
+  // console.log(arguments);
+}
 
   // Prevent scrolling on touch.
   window.ontouchmove = function () {

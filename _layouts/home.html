@@ -99,12 +99,6 @@
       background: #333 no-repeat center center;
     }
 
-
-
-
-
-
-
 /* line 3, ../sass/_offline-theme-base-indicator.sass */
 .offline-ui, .offline-ui *, .offline-ui:before, .offline-ui:after, .offline-ui *:before, .offline-ui *:after {
   -webkit-box-sizing: border-box;
@@ -168,6 +162,7 @@
 
   </style>
   <link rel="stylesheet" href="/css/main-layout.css">
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyB1r8IdnH386S0BBj4r2ZEtQU2mUtSIBoY&language=en&libraries=places"></script>
 </head>
 
 <body>
@@ -199,9 +194,10 @@
             <li><a id="email" href="mailto:bluntspoon@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
           </ul>
         </nav>
+        <div>Your Location: <span id="startLat"></span><span id="startLon"></span></div>
       </header>
       <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
-        <div>Lat:<span id="startLat"></span>Lon:<span id="startLon"></span></div>
+        
       </footer>
     </div>
   </div>
