@@ -49,11 +49,9 @@
 
 function getLocation(){
   var startPos;
-  
+
   var geoSuccess = function(position) {
     startPos = position;
-    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
     var geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(startPos.coords.latitude,startPos.coords.longitude);
   
