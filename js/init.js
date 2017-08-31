@@ -49,6 +49,7 @@
 
 function getLocation(){
   var startPos;
+  
   var geoSuccess = function(position) {
     startPos = position;
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
@@ -61,26 +62,17 @@ function getLocation(){
         }, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (results[0]) {
-                   
-                    alert(results[0].formatted_address);
-                  
+                  document.getElementById('address').innerHTML = results[0].formatted_address;
                 }
             } else {
-              
-              alert(trans.NoResolvedAddress);
+              document.getElementById('address').innerHTML = trans.NoResolvedAddress;
             }
+            document.getElementById('location').style.display = block;
         });
 
   };
-  
-  
   navigator.geolocation.getCurrentPosition(geoSuccess);
-
-   
- 
-	
-
-  }
+}
 
 
 function error(msg) {
