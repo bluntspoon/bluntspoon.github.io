@@ -46,9 +46,9 @@
 
 function updateOnlineStatus(event) {
   if(navigator.onLine ){
-    document.getElementById("offline-indicator").style.display = "none";
+    document.getElementById("offline-indicator").classList.remove = "offline-ui-down";
   }else{
-    document.getElementById("offline-indicator").style.display = "block";
+    document.getElementById("offline-indicator").classList.add = "offline-ui-down"
   }
 }
 
