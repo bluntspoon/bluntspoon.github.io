@@ -65,7 +65,7 @@ function getLocation(){
             } else {
               document.getElementById('address').innerHTML = trans.NoResolvedAddress;
             }
-            document.getElementById('location').style.display = block;
+            document.getElementById('location').style.display = 'block';
         });
 
   };
