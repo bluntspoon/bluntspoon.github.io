@@ -1,11 +1,12 @@
-title: Andrew Bevan
-author: bluntspoon
+title: Andrew Bevan - Site about me
+author: Andrew Bevan
 email: bluntspoon@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Andrew Bevan on Web, Code, Technology and Life
+  Andrew Bevan on 3D Printing, Code, Technology and Life
 
 twitter_username: bluntspoon
 github_username: bluntspoon
+facebook_username: bluntspoon
 google_analytics: UA-12923011-8
 
 # Minima date format
