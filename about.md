@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Andrew Bevan - About Me
+title: About Me
 permalink: /about/
 ---
 
@@ -13,6 +13,6 @@ I also have a passion for 3d Printing. My wife and I run a small 3d printing bus
 My Tech Stack includes Typescript/Javascript, LESS/CSS, C# and SQL. 
 
 # Wish to contact me?
-Drop me a message on social media or email below
+Drop me a message on social media or email below.
 
 
