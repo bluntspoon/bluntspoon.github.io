@@ -97,9 +97,9 @@ textarea {
                 </div>
               </div>
       
-              <div class="col-sm-3 col-sm-offset-9">
+              <!-- <div class="col-sm-3 col-sm-offset-9">
                 <input class="btn btn-large btn-success" id="create" type="submit" value="Create">
-              </div>
+              </div> -->
             </div>
       
           </form>
@@ -148,7 +148,6 @@ textarea {
             }
       
             function createScript() {
-      
               $('#copy').html('Copy');
               $('#copy').removeClass("btn-success");
       
@@ -156,8 +155,6 @@ textarea {
               var regEx = new RegExp("tb_", "ig");
               tableName = tableName.replace(regEx, "")
               tableName = tableName.replace(/[^a-z0-9\s]/gi, '').replace(/[\s]/g, '')
-            
-              
       
               var indexcolumn = $("#indexcolumn").val().trim();
               indexcolumn = indexcolumn.replace(/[^a-z0-9\s,]/gi, '').replace(/[\s]/g, '')
