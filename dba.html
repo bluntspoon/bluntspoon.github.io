@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBA Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style>
+ .CodeMirror {
+  border: 1px solid #eee;
+  height: 150px;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("DBA Tools", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Create Index Script", "Index", "Home")</li>
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+  <div class="container">
+    <div class="col-md-9">
+        <div class="col-md-9 col-md-offset-3">
+          <div class="page-header">
+            <h3>Create Index Script</h3>
+          </div>
+          <form>
+            <div class="row">
+              <div class="col-md-10 form-horizontal">
+                <div class="form-group">
+                  <label for="tablename" class="col-sm-6 control-label col-sm-pad">Table Name:</label>
+                  <div class="col-sm-6 col-sm-pad">
+                    <input class="form-control input-sm" name="tablename" id="tablename" type="text" placeholder="tb_TableName" required="required">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="indexcolumn" class="col-sm-6 control-label col-sm-pad">Index Columns:</label>
+                  <div class="col-sm-6 col-sm-pad">
+                    <input class="form-control input-sm" name="indexcolumn" id="indexcolumn" type="text" placeholder="Column1, Column2" required="required">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="includedcolumn" class="col-sm-6 control-label col-sm-pad">Included Columns:</label>
+                  <div class="col-sm-6 col-sm-pad">
+                    <input class="form-control input-sm" name="includedcolumn" id="includedcolumn" type="text" placeholder="Column1, Column2 (optional)">
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="maxdop" class="col-sm-6 control-label col-sm-pad">Maxdop:</label>
+                  <div class="col-sm-6 col-sm-pad">
+                    <input class="form-control input-sm" name="maxdop" id="maxdop" type="number" value="4" min="1" max="99">
+                  </div>
+                </div>
+      
+                <div class="form-group pull-right">
+                  <label class="col-sm-12 col-sm-pad">
+                    <input type="checkbox" id="sortTemp" checked="checked"> Sort in Tempdb
+                  </label>
+                  <label class="col-sm-12 col-sm-pad">
+                    <input type="checkbox" id="online" checked="checked"> Online
+                  </label>
+                  <label class="col-sm-12 col-sm-pad">
+                    <input type="checkbox" id="unique"> Unique
+                  </label>
+                </div>
+              </div>
+      
+              <div class="col-sm-3 col-sm-offset-9">
+                <input class="btn btn-large btn-success" id="create" type="submit" value="Create">
+              </div>
+            </div>
+      
+          </form>
+      
+         
+          <div class="col-sm-12 col-sm-pad">
+            <label for="script">Script:</label>
+            <button id="copy" class="btn btn-small">
+              Copy
+            </button>
+          </div>
+          &nbsp
+          <div class="row">
+            <div class="col-sm-12 col-sm-pad pull-right" style="max-height: 100px">
+              <textarea class="form-control textarea-sm" id="output" style="min-width: 100%" rows="5" cols="66"></textarea>
+            </div>
+            
+          </div>
+          </div>
+      </div>
+      
+    
+        <script>
+          $(document).ready(function () {
+            var editor = CodeMirror.fromTextArea(document.getElementById('output'), {
+              mode: "sql",
+              indentWithTabs: true,
+              smartIndent: true,
+              matchBrackets: true,
+              tabMode: "indent",
+              lineWrapping: true,
+              lineNumbers: true,
+      
+              styleActiveLine: true,
+              readOnly: true
+            });
+      
+            String.prototype.replaceAll = function (str1, str2, ignore) {
+              return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g, "\\$&"), (ignore ? "gi" : "g")), (typeof (str2) == "string") ? str2.replace(/\$/g, "$$$$") : str2);
+            }
+      
+            function pad(num, size) {
+              var s = num + "";
+              while (s.length < size) s = "0" + s;
+              return s;
+            }
+      
+            function createScript() {
+      
+              $('#copy').html('Copy');
+              $('#copy').removeClass("btn-success");
+      
+              var tableName = $("#tablename").val().trim();
+              var regEx = new RegExp("tb_", "ig");
+              tableName = tableName.replace(regEx, "")
+              tableName = tableName.replace(/[^a-z0-9\s]/gi, '').replace(/[\s]/g, '')
+            
+              
+      
+              var indexcolumn = $("#indexcolumn").val().trim();
+              indexcolumn = indexcolumn.replace(/[^a-z0-9\s,]/gi, '').replace(/[\s]/g, '')
+              var indexname = indexcolumn.replaceAll(",", "_");
+      
+              var includedcolumn = $("#includedcolumn").val().trim();
+              includedcolumn = includedcolumn.replace(/[^a-z0-9\s,]/gi, '').replace(/[\s]/g, '')
+              var includestring = "_";
+              if (includedcolumn.length > 0) {
+                includedcolumn = "INCLUDE(" + includedcolumn + ") \n";
+                includestring = "_INC_";
+              }
+      
+              var maxDop = $("#maxdop").val().trim();
+              var sortInTemp = $("#sortTemp").is(":checked") ? "ON" : "OFF";
+              var online = $("#online").is(":checked") ? "ON" : "OFF";
+              var isUnique = $("#unique").is(":checked");
+      
+              var firstPart = "CREATE NONCLUSTERED INDEX ix_";
+              if (isUnique) {
+                firstPart = "CREATE UNIQUE NONCLUSTERED INDEX ak_";
+              }
+              
+              var formattedDate = new Date();
+              var d = formattedDate.getDate();
+              d = pad(d, 2);
+              var m = formattedDate.getMonth();
+              m += 1;  // JavaScript months are 0-11
+              m = pad(m, 2);
+              var y = formattedDate.getFullYear();
+              var date = y + "" + m + "" + d;
+      
+              var str = firstPart + "$tableName$_$indexname$$includestring$DBA_$date$ \n" +
+                        "ON tb_$tableName$ ($indexcolumn$) \n" +
+                        "$includedcolumn$" +
+                        "WITH (MAXDOP = $maxdop$, SORT_IN_TEMPDB = $sortTemp$, ONLINE = $online$)"
+              var str = str.replaceAll("$tableName$", tableName);
+              str = str.replaceAll("$indexname$", indexname);
+              str = str.replaceAll("$indexcolumn$", indexcolumn);
+              str = str.replaceAll("$includestring$", includestring);
+              str = str.replaceAll("$includedcolumn$", includedcolumn);
+              str = str.replaceAll("$maxdop$", maxDop);
+              str = str.replaceAll("$sortTemp$", sortInTemp);
+              str = str.replaceAll("$online$", online);
+              str = str.replaceAll("$date$", date);
+      
+              editor.setValue(str);
+              var clipboard = new Clipboard('#copy', {
+                text: function (trigger) {
+                  return editor.getValue();
+                }
+              });
+      
+              clipboard.on('success', function (e) {
+                $('#copy').html('Copied');
+                $('#copy').addClass("btn-success");
+                e.clearSelection();
+              });
+            }
+      
+            $("input").keyup(function () {
+              createScript();
+            });
+      
+            $('input').change(function () {
+              createScript();
+            });
+      
+            $("form").on('submit', function (e) {
+              e.preventDefault();
+              createScript();
+            });
+          });
+        </script>
+  </div>
+
+</body>
+</html>
+
+
+
+  
+  
+  
