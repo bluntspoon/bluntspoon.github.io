@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    
+</head>
+
+<body>
+
+    <h1 id="device"></h1>
+
+
+    <script>"use strict";
+        var IpadDetector = /** @class */ (function () {
+            function IpadDetector(userAgent) {
+                var _this = this;
+                this._isIpad = false;
+                this.isIpad = function () {
+                    return _this._isIpad;
+                };
+                this.detect = function (userAgent) {
+                    var ua = (userAgent || window.navigator.userAgent);
+                    var matchedPart = /iPad|Macintosh/.exec(ua);
+                    if (matchedPart && matchedPart.length > 0) {
+                        var devicePrint = matchedPart[0];
+                        if (devicePrint === 'iPad')
+                            return true;
+                        if (devicePrint == 'Macintosh') {
+                            var canvas = document.createElement('canvas');
+                            if (canvas != null) {
+                                var context = canvas.getContext('webgl') ||
+                                    canvas.getContext('experimental-webgl');
+                                if (context) {
+                                    var info = context.getExtension('WEBGL_debug_renderer_info');
+                                    if (info) {
+                                        var renderer = context.getParameter(info.UNMASKED_RENDERER_WEBGL);
+                                        if (renderer.indexOf('Apple') != -1) {
+                                            return true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return false;
+                };
+                this._isIpad = this.detect(userAgent);
+            }
+            IpadDetector.getInstance = function (userAgent) {
+                if (!this.instance) {
+                    this.instance = new IpadDetector(userAgent);
+                }
+                return this.instance;
+            };
+            return IpadDetector;
+        }());
+
+
+        if (IpadDetector.getInstance().isIpad()) {
+            document.getElementById("device").innerText = "I'm an iPad";
+        }else{
+            document.getElementById("device").innerText = "I'm NOT an iPad";
+        }
+
+    </script>
+</body>
+
+</html>
