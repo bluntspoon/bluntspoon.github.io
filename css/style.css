@@ -380,10 +380,7 @@
 
 				
 		
-	#top-right{
-		position: absolute;
-    z-index: 999;
-	}
+
 				
 
 /* Footer */
@@ -402,4 +399,10 @@
 		position: absolute;
 		text-align: center;
 		width: 100%;
+	}
+
+
+	#top-right{
+		position: absolute;
+    	z-index: 999;
 	}
