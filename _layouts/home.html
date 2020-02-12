@@ -176,6 +176,10 @@
   </style>
   <link rel="stylesheet" href="/css/main-layout.css">
   <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkNJqtcasJBSzyGEAJfEhbwW_dP7-YD-E&language=en&libraries=places"></script>
+  <script type="module">
+    import { html } from 'https://unpkg.com/lit-html?module';
+    import 'https://cdn.jsdelivr.net/npm/@vanillawc/wc-social-link@latest/index.js';
+  </script>
 </head>
 
 <body>
@@ -203,8 +207,8 @@
             <li><a id="twitter" href="https://twitter.com/bluntspoon" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a id="linkedin" href="https://za.linkedin.com/pub/andrew-bevan/3b/8a0/aa3/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
             <li><a id="facebook" href="https://www.facebook.com/BluntSpoon" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a id="github" href="https://github.com/bluntspoon" class="icon fa-github"><span class="label">Github</span></a></li>
-            <wc-social-link network="github" handle="bluntspoon" style="--color:purple"></wc-social-link>
+            <!-- <li><a id="github" href="https://github.com/bluntspoon" class="icon fa-github"><span class="label">Github</span></a></li> -->
+            <li> <wc-social-link network="github" handle="bluntspoon" style="--color:purple"></wc-social-link></li>
             <li><a id="email" href="mailto:bluntspoon@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
           </ul>
         </nav>
@@ -221,18 +225,17 @@
   <div id="offline-indicator" class="offline-ui"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div>
 
   <script>
-    import { html } from 'lit-html';
-    import 'https://cdn.jsdelivr.net/npm/@vanillawc/wc-social-link@latest/index.js';
+  
 
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }).catch(function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-  }
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(function(err) {
+              console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
 
   </script>
   <script src="js/skel.min.js"></script>
