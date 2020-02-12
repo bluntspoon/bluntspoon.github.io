@@ -421,6 +421,11 @@
 							background-color: rgba(255, 255, 255, 0.35);
 							color: white;
 						}
+
+						#header nav wc-social-link span {
+							display: none;
+						}
+		
 	
 				
 
