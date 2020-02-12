@@ -204,9 +204,11 @@
             <li><a id="linkedin" href="https://za.linkedin.com/pub/andrew-bevan/3b/8a0/aa3/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
             <li><a id="facebook" href="https://www.facebook.com/BluntSpoon" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
             <li><a id="github" href="https://github.com/bluntspoon" class="icon fa-github"><span class="label">Github</span></a></li>
+            <wc-social-link network="github" handle="bluntspoon" style="--color:purple"></wc-social-link>
             <li><a id="email" href="mailto:bluntspoon@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
           </ul>
         </nav>
+        
         <div id="location" style="display:none">Approx. Location: <div id="address" style="font-style:italic"></div></div>
       </header>
       <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
@@ -219,6 +221,9 @@
   <div id="offline-indicator" class="offline-ui"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div>
 
   <script>
+    import { html } from 'lit-html';
+    import 'https://cdn.jsdelivr.net/npm/@vanillawc/wc-social-link@latest/index.js';
+
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js').then(function(registration) {
