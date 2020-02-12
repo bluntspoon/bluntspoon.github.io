@@ -177,7 +177,7 @@
   <link rel="stylesheet" href="/css/main-layout.css">
   <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkNJqtcasJBSzyGEAJfEhbwW_dP7-YD-E&language=en&libraries=places"></script>
   <script type="module">
-    import { html } from 'https://unpkg.com/lit-html?module';
+   
     import '/js/bs-social-link.min.js';
   </script>
 </head>
@@ -190,6 +190,9 @@
     </div>
   </div>
   <div id="wrapper">
+      <div id="top-right">
+        <bs-social-link network="github" handle="bluntspoon" style="--color:whitesmoke"></bs-social-link>
+    </div>
     <div id="bg"></div>
     <div id="overlay"></div>
     <div id="main">
@@ -201,18 +204,7 @@
             <li> <a href="blog">Blog</a></li>
             <li> <a href="about">About Me</a></li>
           </ul>
-        </nav>
-        <nav>
-          <ul>
-            <li><a id="twitter" href="https://twitter.com/bluntspoon" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a id="linkedin" href="https://za.linkedin.com/pub/andrew-bevan/3b/8a0/aa3/en" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            <li><a id="facebook" href="https://www.facebook.com/BluntSpoon" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <!-- <li><a id="github" href="https://github.com/bluntspoon" class="icon fa-github"><span class="label">Github</span></a></li> -->
-            <li><bs-social-link network="github" handle="bluntspoon" style="--color:whitesmoke"></bs-social-link></li>
-            <li><a id="email" href="mailto:bluntspoon@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-          </ul>
-        </nav>
-        
+        </nav>        
         <div id="location" style="display:none">Approx. Location: <div id="address" style="font-style:italic"></div></div>
       </header>
       <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
