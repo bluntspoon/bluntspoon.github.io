@@ -378,53 +378,7 @@
 					display: none;
 				}
 
-				#header nav wc-social-link {
-					-webkit-tap-highlight-color: transparent;
-					-webkit-touch-callout: none;
-					border: 0;
-					display: inline-block;
-				}
-	
-					#header nav wc-social-link:before {
-						-moz-transition: all 0.2s ease-in-out;
-						-webkit-transition: all 0.2s ease-in-out;
-						-o-transition: all 0.2s ease-in-out;
-						-ms-transition: all 0.2s ease-in-out;
-						transition: all 0.2s ease-in-out;
-						border-radius: 100%;
-						border: solid 1px white;
-						display: block;
-						font-size: 1.75em;
-						height: 2.5em;
-						line-height: 2.5em;
-						position: relative;
-						text-align: center;
-						top: 0;
-						width: 2.5em;
-					}
-	
-					#header nav wc-social-link:hover {
-						font-weight: 600;
-					}
-	
-						#header nav wc-social-link:hover:before {
-							background-color: rgba(255, 255, 255, 0.175);
-							color: white;
-						}
-	
-					#header nav wc-social-link:active {
-						font-size: 0.95em;
-						background: none;
-					}
-	
-						#header nav wc-social-link:active:before {
-							background-color: rgba(255, 255, 255, 0.35);
-							color: white;
-						}
-
-						#header nav wc-social-link span {
-							display: none;
-						}
+				
 		
 	
 				
