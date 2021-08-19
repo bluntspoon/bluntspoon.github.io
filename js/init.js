@@ -28,14 +28,13 @@
     }
   });
 
-  // Remove "loading" class once the page has fully loaded.
   window.onload = function () {
     document.body.className = '';
     document.getElementById("preloader").remove();
     window.addEventListener('online',  updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
     if (navigator.geolocation && navigator.onLine) {
-        getLocation();
+       // getLocation(); -- removing for now
       } 
     }
 
