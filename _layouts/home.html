@@ -8,7 +8,7 @@
   <meta name="keywords" content="Andrew Bevan, About, Blog, Career Development, Code Quality, Online Identity, Personal Development, Product Review, Javascript, Twitter, Visual Studio, Windows, CSharp, C#">
   <meta name="author" content="Andrew Bevan">
   <meta name="copyright" content="Andrew Bevan">
-  <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">  
+  <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="About me and my thoughts on Web, Code, Technology and Life">
@@ -23,7 +23,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://andrewbevan.me" />
   <meta property="og:image" content="https://andrewbevan.me/assets/images/andrew-bevan.png" />
-  <meta property="og:description" content="About me and my thoughts on Web, Code, Technology and Life" /> 
+  <meta property="og:description" content="About me and my thoughts on Web, Code, Technology and Life" />
   <meta property="og:site_name" content="Andrew Bevan" />
   <meta property="og:locale" content="en_GB" />
 
@@ -177,7 +177,7 @@
   <link rel="stylesheet" href="/css/main-layout.css">
   <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkNJqtcasJBSzyGEAJfEhbwW_dP7-YD-E&language=en&libraries=places"></script>
   <script type="module">
-   
+
     import '/js/bs-social-link.min.js';
   </script>
 </head>
@@ -206,11 +206,11 @@
             <li> <a href="blog">Blog</a></li>
             <li> <a href="about">About Me</a></li>
           </ul>
-        </nav>        
+        </nav>
         <div id="location" style="display:none">Approx. Location: <div id="address" style="font-style:italic"></div></div>
       </header>
       <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
-        
+
       </footer>
     </div>
   </div>
@@ -219,21 +219,21 @@
   <div id="offline-indicator" class="offline-ui"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div>
 
   <script>
-  
 
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
-              console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }).catch(function(err) {
-              console.log('ServiceWorker registration failed: ', err);
-          });
-      });
-    }
+
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', function() {
+    //       navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    //           console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    //       }).catch(function(err) {
+    //           console.log('ServiceWorker registration failed: ', err);
+    //       });
+    //   });
+    // }
 
   </script>
   <script src="js/skel.min.js"></script>
   <script src="js/init.js"></script>
-  
+
 </body>
 </html>
