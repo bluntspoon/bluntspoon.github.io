@@ -3,14 +3,14 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-- 🙂 I am Andrew Bevan. 🔴🔵🟡🟢
-- 🔭 I’m a Full Stack Developer working few large projects using the DotNet Stack. 
-- 🌱 I’m learning more about Azure.
-- 🤔 I’m looking for help with furthering my skills as an Architect.
-- 💬 I’m on Twitter https://twitter.com/bluntspoon
-- 📫 How to reach me: [Email Me](mailto:bluntspoon@gmail.com)
-- 😄 Pronouns: he/him/his
-- ⚡ Fact: I enjoy spending time with my family. 
+🙂 I am Andrew Bevan. 🔴🔵🟡🟢
+🔭 I’m a Full Stack Developer working few large projects using the DotNet Stack. 
+🌱 I’m learning more about Azure.
+🤔 I’m looking for help with furthering my skills as an Architect.
+💬 I’m on Twitter https://twitter.com/bluntspoon
+📫 How to reach me: [Email Me](mailto:bluntspoon@gmail.com)
+😄 Pronouns: he/him/his
+⚡ Fact: I enjoy spending time with my family. 
 
 ![image](https://user-images.githubusercontent.com/5371411/165077333-b3f5ef59-ed00-47d5-9af6-8df4a0cc8de5.png)
 ## Senior Software Engineer with expertise in Software Development for the Gaming Industry
