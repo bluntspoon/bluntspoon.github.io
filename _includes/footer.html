@@ -2,12 +2,12 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+<!--     <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
+            <li>
             {% if site.author %}
               {{ site.author | escape }}
             {% else %}
@@ -31,6 +31,12 @@
           {% if site.twitter_username %}
           <li>
             {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username %}
           </li>
           {% endif %}
         </ul>
