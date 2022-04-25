@@ -3,13 +3,12 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-
-- 🙂 I am Andrew Bevan.🔴🔵🟡🟢
+- 🙂 I am Andrew Bevan. 🔴🔵🟡🟢
 - 🔭 I’m a Full Stack Developer working few large projects using the DotNet Stack. 
 - 🌱 I’m learning more about Azure.
 - 🤔 I’m looking for help with furthering my skills as an Architect.
 - 💬 I’m on Twitter https://twitter.com/bluntspoon
-- 📫 How to reach me: <see email address in footer>
+- 📫 How to reach me: [Email Me](mailto:bluntspoon@gmail.com)
 - 😄 Pronouns: he/him/his
 - ⚡ Fact: I enjoy spending time with my family. 
 
@@ -37,3 +36,20 @@ Highly developed analytical expertise and problem solving, time-management and o
 ### RECENT KEY PROJECTS:
 - Architecting a new cloud-based game management system, to streamline the delivery of games to customers 
 - Developing modern, cross-platform multiplayer poker gaming experience for the web, Android, Windows and Mac
+
+
+### TECH STACK:
+Languages & Frameworks
+- C# / .NET / ASP.NET / Razor / MVC / WebAPI
+- SQL / LINQ / ADO.NET / EF Core / Dapper
+- TypeScript / JavaScript / HTML5 / CSS3 
+
+
+Tools 
+- Visual Studio / VS Code
+- SQL Management Studio / Azure Data Studio
+- Azure Cloud - Kubernetes / AKS / Terraform
+- Azure DevOps - Work Items / Repos / Pipelines
+- Github - Projects / Repos / Issues
+- Automation - Selenium / NUnit / NSubstitute / Powershell
+- Microsoft Office - Excel / Word / PowerPoint / Outlook / Teams
