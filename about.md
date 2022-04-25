@@ -9,7 +9,7 @@ permalink: /about/
 - 🌱 I’m learning more about Azure.
 - 🤔 I’m looking for help with furthering my skills as an Architect.
 - 💬 I’m on Twitter https://twitter.com/bluntspoon
-- 📫 How to reach me: https://andrewbevan.me/about/
+- 📫 How to reach me: <see email address in footer>
 - 😄 Pronouns: he/him/his
 - ⚡ Fact: I enjoy spending time with my family. 
 
