@@ -53,3 +53,5 @@ Tools 
 - Github - Projects / Repos / Issues
 - Automation - Selenium / NUnit / NSubstitute / Powershell
 - Microsoft Office - Excel / Word / PowerPoint / Outlook / Teams
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6d86d050-0010-4ec9-afcb-d3dc5d10fc91" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
