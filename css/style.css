@@ -383,13 +383,13 @@ display: inline-block;
 	width: 100%;
 }
 
-footer .gallery {
+.gallery {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-template-rows: repeat(8, 5vw);
 	grid-gap: 15px;
 }
 
-footer .gallery a {
+.gallery a {
 	text-decoration: none;
 }
