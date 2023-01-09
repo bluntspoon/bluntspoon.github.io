@@ -412,3 +412,7 @@
 		grid-template-rows: repeat(8, 5vw);
 		grid-gap: 15px;
 	}
+
+	.gallery a {
+		text-decoration: none;
+	}
