@@ -390,6 +390,6 @@ display: inline-block;
 	grid-gap: 15px;
 }
 
-.gallery a:hover {
-	text-decoration: none;
+footer .gallery a:hover {
+    text-decoration: none;
 }
