@@ -13,7 +13,7 @@ permalink: /about/
 - ⚡ Fact: I enjoy spending time with my family. 
 
 ![image](https://user-images.githubusercontent.com/5371411/165077333-b3f5ef59-ed00-47d5-9af6-8df4a0cc8de5.png)
-## Senior Software Engineer with expertise in Software Development for the Gaming Industry
+## Senior Software Developer with expertise in Software Development for the Gaming Industry
 
 I am a skilled and accomplished IT professional, specialising in software development, utilising Agile methodologies.
 
@@ -24,12 +24,13 @@ Highly developed analytical expertise and problem solving, time-management and o
 
 ### QUALIFICATIONS:
 - Bachelor’s Degree in Information Technology, Durban University of Technology
-- Applied Project Management in Information Technology, UNISA
-- AI and Big Data, Learning Machines
+- Microsoft Certified: Azure Administrator Associate
 - Microsoft Certified: Azure Fundamentals
 - Microsoft Certified Solutions Developer: Web Applications and App Builder 
 - Microsoft Certified Professional Developer: Web Developer
 - Microsoft Certified Technology Specialist: .NET Framework 
+- Applied Project Management in Information Technology, UNISA
+- AI and Big Data, Learning Machines
 - ISEB - Test Analyst, BCS
 
 
