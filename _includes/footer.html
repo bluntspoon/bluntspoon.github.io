@@ -2,12 +2,12 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+<!--     <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>
+            <li>
             {% if site.author %}
               {{ site.author | escape }}
             {% else %}
@@ -33,12 +33,39 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.linkedin_username %}
+          <li>
+            {% include icon-linkedin.html username=site.linkedin_username %}
+          </li>
+          {% endif %}
         </ul>
       </div>
-
       <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
+        <div class="gallery">
+          <a href="https://www.credly.com/badges/55eb4035-d80a-4009-8b14-b509d4d245fe" title="Microsoft Certified: Azure Administrator Associate" target="_blank">
+            <img src="../assets/images/badges/microsoft-certified-azure-administrator-associate.2.png" alt="Microsoft Certified: Azure Administrator Associate" />
+          </a>
+          <a href="https://www.credly.com/badges/6d86d050-0010-4ec9-afcb-d3dc5d10fc91" title="Microsoft Certified: Azure Fundamentals" target="_blank">
+            <img src="../assets/images/badges/microsoft-certified-azure-fundamentals.png" alt="Microsoft Certified: Azure Fundamentals" />
+          </a>
+          <a href="https://www.credly.com/badges/6fd95c2e-2e13-4d02-9737-89489fe05453" title="MCSA: Web Applications" target="_blank">
+            <img src="../assets/images/badges/mcsa-web-applications-certified-2016.png" alt="MCSA: Web Applications" />
+          </a>
+          <a href="https://www.credly.com/badges/2c00b5f5-89c3-4be4-98a5-3922544209fe" title="MCSD: App Builder" target="_blank">
+            <img src="../assets/images/badges/mcsd-app-builder-certified-2016.png" alt="MCSD: App Builder" />
+          </a>
+        </div>
       </div>
+<!--       
+        <div data-iframe-width="140" data-iframe-height="270" data-share-badge-id="55eb4035-d80a-4009-8b14-b509d4d245fe" data-share-badge-host="https://www.credly.com"></div>
+        <div data-iframe-width="140" data-iframe-height="270" data-share-badge-id="6d86d050-0010-4ec9-afcb-d3dc5d10fc91" data-share-badge-host="https://www.credly.com"></div>
+        <div data-iframe-width="140" data-iframe-height="270" data-share-badge-id="2c00b5f5-89c3-4be4-98a5-3922544209fe" data-share-badge-host="https://www.credly.com"></div>
+        <div data-iframe-width="140" data-iframe-height="270" data-share-badge-id="6fd95c2e-2e13-4d02-9737-89489fe05453" data-share-badge-host="https://www.credly.com"></div>  
+
+     <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div> -->
     </div>
 
   </div>
