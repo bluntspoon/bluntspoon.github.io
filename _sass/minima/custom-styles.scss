@@ -1,2 +1,50 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+/* Circle Avatar Styles */
+.circle {
+  line-height: 0;
+	display: inline-block;
+	margin: 5px;
+  border: 4px solid rgba(200,200,200,0.4);
+	border-radius: 50%;
+	transition: linear 0.25s;
+  height: 60px;
+  width: 60px;
+	transform: scale(1);
+}
+
+.circle.blue {
+	background: rgba(52, 172, 224, 1);
+	box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+	animation: pulse-blue 4s infinite;
+}
+
+@keyframes pulse-blue {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+	}
+}
+
+.circle img {
+	border-radius: 50%;
+}
+.circle:hover {
+	transition: ease-out 0.2s;
+  border: 4px solid rgba(0,0,0,0.2);
+  -webkit-transition: ease-out 0.2s;
+}
+a.circle {
+  color: transparent;
+}
