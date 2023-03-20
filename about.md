@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
+
 - 🙂 I am Andrew Bevan. 🔴🔵🟡🟢
 - 🔭 I’m a Full Stack Developer working few large projects using the DotNet Tech Stack.
 - 🌱 I’m learning more about Azure.
