@@ -1,21 +1,30 @@
 {
-    "name": "Andrew Bevan",
-    "short_name":"Andrew Bevan",
-    "start_url": "/?utm_source=homescreen",
-    "background_color": "#5fa4c2",
-    "theme_color": "#5fa4c2",
-    "display": "fullscreen",
-    "icons": [
-        {
-            "src": "/android-chrome-192x192.png?v=yyaLEwvRMA",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png?v=yyaLEwvRMA",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
-   
+  "name": "Andrew Bevan",
+  "short_name": "Andrew Bevan",
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#5fa4c2",
+  "theme_color": "#5fa4c2",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/css/icons/16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/css/icons/32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/css/icons/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/css/icons/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
