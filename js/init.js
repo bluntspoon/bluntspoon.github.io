@@ -10,7 +10,7 @@
         }
       },
       'wide': {
-        range: '-1680',
+        range: '-1920',
         href: 'css/style-wide.css'
       },
       'normal': {
@@ -35,7 +35,7 @@
     window.addEventListener('offline', updateOnlineStatus);
     if (navigator.geolocation && navigator.onLine) {
        // getLocation(); -- removing for now
-      } 
+      }
     }
 
 function updateOnlineStatus(event) {
@@ -53,7 +53,7 @@ function getLocation(){
     startPos = position;
     var geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(startPos.coords.latitude,startPos.coords.longitude);
-  
+
         geocoder.geocode({
             latLng: latlng
         }, function(results, status) {
