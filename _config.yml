@@ -42,6 +42,8 @@ minima:
 #
 header_pages:
    - about.md
+   - lists.md
+   - blog.md
 
 # Set to `true` to show excerpts on the homepage.
 #
