@@ -18,7 +18,7 @@
   (
     wide: (
       1281px,
-      1680px,
+      2560px,
     ),
     normal: (
       737px,
@@ -618,4 +618,28 @@ a {
       padding: 0 1em;
     }
   }
+}
+
+
+/* Circle Avatar Styles */
+.circle {
+	line-height: 0;
+	display: inline-block;
+	margin: 5px;
+  border: 4px solid rgba(200,200,200,0.4);
+	border-radius: 50%;
+	transition: linear 0.25s;
+  height: 128px;
+  width: 128px;
+}
+.circle img {
+	border-radius: 50%;
+}
+.circle:hover {
+	transition: ease-out 0.2s;
+  border: 4px solid rgba(0,0,0,0.2);
+  -webkit-transition: ease-out 0.2s;
+}
+a.circle {
+  color: transparent;
 }
