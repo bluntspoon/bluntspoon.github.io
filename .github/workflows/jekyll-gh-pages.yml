@@ -36,7 +36,7 @@ jobs:
           source: ./
           destination: ./_site
       - name: Compile CSS from SCSS files
-        uses: actions/sass-build@v0.5.0
+        uses: gha-utilities/sass-build@v0.5.0
         with:
           source: |
            ./assets/sass/main.scss
