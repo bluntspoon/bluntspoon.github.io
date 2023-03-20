@@ -10,7 +10,7 @@
         }
       },
       'wide': {
-        range: '-2160',
+        range: '-2560',
         href: 'css/style-wide.css'
       },
       'normal': {
