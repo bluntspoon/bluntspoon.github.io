@@ -48,3 +48,5 @@ header_pages:
 # Set to `true` to show excerpts on the homepage.
 #
 # show_excerpts: false
+
+google_analytics: UA-12923011-8
