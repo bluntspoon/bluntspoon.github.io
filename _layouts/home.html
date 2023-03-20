@@ -104,73 +104,6 @@
       overflow: visible;
       background: #333 no-repeat center center;
     }
-
-/* line 3, ../sass/_offline-theme-base-indicator.sass */
-.offline-ui, .offline-ui *, .offline-ui:before, .offline-ui:after, .offline-ui *:before, .offline-ui *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 6, ../sass/_offline-theme-base-indicator.sass */
-.offline-ui {
-  position: fixed;
-  background: white;
-  z-index: 2000;
-  display: inline-block;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
-}
-/* line 13, ../sass/_offline-theme-base-indicator.sass */
-.offline-ui .offline-ui-retry {
-  visibility: visible;
-  opacity: 1;
-}
-/* line 16, ../sass/_offline-theme-base-indicator.sass */
-.offline-ui.offline-ui-up {
-  visibility: visible;
-  opacity: 1;
-}
-/* line 19, ../sass/_offline-theme-base-indicator.sass */
-.offline-ui.offline-ui-down {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* line 11, ../sass/offline-theme-slide-indicator.sass */
-.offline-ui {
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  -ms-border-radius: 4px 4px 0 0;
-  -o-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
-  font-family: "Helvetica Neue", sans-serif;
-  padding: 1em;
-  max-width: 100%;
-  bottom: 0;
-  left: 1em;
-}
-/* line 19, ../sass/offline-theme-slide-indicator.sass */
-.offline-ui.offline-ui-up {
-  background: #d6e9c6;
-  color: #468847;
-}
-/* line 23, ../sass/offline-theme-slide-indicator.sass */
-.offline-ui.offline-ui-down {
-  background: #ec8787;
-  color: #551313;
-}
-
-/* line 5, ../sass/offline-language-english-indicator.sass */
-.offline-ui.offline-ui-up .offline-ui-content:before {
-  content: "Online";
-}
-/* line 10, ../sass/offline-language-english-indicator.sass */
-.offline-ui.offline-ui-down .offline-ui-content:before {
-  content: "Offline";
-}
-
   </style>
 
   <link rel="stylesheet" href="/css/main-layout.css">
@@ -210,26 +143,8 @@
       </footer>
     </div>
   </div>
-
-
-  <div id="offline-indicator" class="offline-ui"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div>
-
-  <script>
-
-
-    // if ('serviceWorker' in navigator) {
-    //   window.addEventListener('load', function() {
-    //       navigator.serviceWorker.register('/sw.js').then(function(registration) {
-    //           console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    //       }).catch(function(err) {
-    //           console.log('ServiceWorker registration failed: ', err);
-    //       });
-    //   });
-    // }
-
-  </script>
   <script src="js/skel.min.js"></script>
   <script src="js/init.js"></script>
-
 </body>
+
 </html>
