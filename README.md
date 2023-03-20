@@ -6,7 +6,6 @@ Domain: <https://andrewbevan.me>
 
 ## TODO
 
-- move off github pages
 - remove blog
 - add lists
   - books / audiobooks
@@ -15,5 +14,4 @@ Domain: <https://andrewbevan.me>
   - travels
 - wire-up google analytics
 - work on rewrite and serve from Azure
-- move icons
 - dark mode
