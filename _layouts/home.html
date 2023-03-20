@@ -3,12 +3,13 @@
 
 <head>
   <title>{{ page.title | escape }}</title>
+  <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="description" content="About me and my thoughts on Web, Code, Technology and Life">
   <meta name="keywords" content="Andrew Bevan, About, Blog, Career Development, Code Quality, Online Identity, Personal Development, Code, Typescript, Javascript, Twitter, Visual Studio, ASPNET, CSharp, C#">
   <meta name="author" content="Andrew Bevan">
   <meta name="copyright" content="Andrew Bevan">
-  <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="About me and my thoughts on Web, Code, Technology and Life">
@@ -43,108 +44,43 @@
   <meta name="application-name" content="Andrew Bevan">
   <meta name="theme-color" content="#ffffff">
 
-  <style>
-    .spinner {
-      width: 40px;
-      height: 40px;
-
-      position: relative;
-      margin: 50% auto;
-    }
-
-    .double-bounce1,
-    .double-bounce2 {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: whitesmoke;
-      opacity: 0.6;
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-      animation: sk-bounce 2.0s infinite ease-in-out;
-    }
-
-    .double-bounce2 {
-      -webkit-animation-delay: -1.0s;
-      animation-delay: -1.0s;
-    }
-
-    @-webkit-keyframes sk-bounce {
-      0%,
-      100% {
-        -webkit-transform: scale(0.0)
-      }
-      50% {
-        -webkit-transform: scale(1.0)
-      }
-    }
-
-    @keyframes sk-bounce {
-      0%,
-      100% {
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-      }
-      50% {
-        transform: scale(1.0);
-        -webkit-transform: scale(1.0);
-      }
-    }
-
-    div#preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-      background: #333 no-repeat center center;
-    }
-  </style>
-
-  <link rel="stylesheet" href="/css/main-layout.css">
-  <script type="module">
-    import '/js/bs-social-link.min.js';
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body>
-  <div id="preloader">
-    <div class="spinner">
-      <div class="double-bounce1"></div>
-      <div class="double-bounce2"></div>
-    </div>
-  </div>
-  <div id="wrapper">
-      <div id="top-right" style="position: absolute; z-index: 999; left: 100%; margin-left: -38px; margin-top: 4px;">
-        <bs-social-link network="github" handle="bluntspoon" style="--color:whitesmoke"></bs-social-link>
-        <bs-social-link network="twitter" handle="bluntspoon" style="--color:whitesmoke"></bs-social-link>
-        <bs-social-link network="linkedin" handle="andrew-bevan" style="--color:whitesmoke"></bs-social-link>
-    </div>
-    <div id="bg"></div>
-    <div id="overlay"></div>
-    <div id="main">
-      <header id="header"><img src="/assets/images/andrew-bevan.png" class="author" alt="My Photo - Andrew Bevan"/>
-        <h1>Andrew Bevan</h1>
-        <p>Father | Husband | Developer | Maker</p>
-        <nav>
-          <ul>
-            <!-- <li> <a href="blog">Blog</a></li> -->
-            <li> <a href="about">About Me</a></li>
-          </ul>
-        </nav>
-      </header>
-      <footer id="footer"><span class="copyright">&copy; Andrew Bevan</span>
+<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-      </footer>
-    </div>
-  </div>
-  <script src="js/skel.min.js"></script>
-  <script src="js/init.js"></script>
+				<!-- Header -->
+					<header id="header">
+            <h1>Andrew Bevan</h1>
+						<p>Father &nbsp;&bull;&nbsp; Husband &nbsp;&bull;&nbsp; Developer &nbsp;&bull;&nbsp; Maker</p>
+						<nav>
+							<ul>
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Andrew Bevan powered by Jekyll<a href="https://jekyllrb.com/">Jekyll</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 </body>
 
 </html>
