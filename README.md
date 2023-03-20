@@ -1,9 +1,17 @@
-# bluntspoon.github.io
-The home of [andrewbevan.me](https://andrewbevan.me) src. 
+# Source code for my professional website
 
+Domain: <https://andrewbevan.me>
 
-# TODO
-[] remove blog
-[] wire-up analytics
-[] work on rewrite and serve from Azure
-[] move icons
+## TODO
+
+- move off github pages
+- remove blog
+- add lists
+  - books / audiobooks
+  - movies
+  - tools
+  - travels
+- wire-up google analytics
+- work on rewrite and serve from Azure
+- move icons
+- dark mode
