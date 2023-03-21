@@ -4,14 +4,15 @@ title: About
 permalink: /about/
 ---
 
-- 🙂 I am Andrew Bevan. 🔴🔵🟡🟢
-- 🔭 I’m a Full Stack Developer working few large projects using the DotNet Tech Stack.
-- 🌱 I’m learning more about Azure.
-- 🤔 I’m looking for help with furthering my skills as an Architect.
-- 💬 I’m on Twitter https://twitter.com/bluntspoon
-- 📫 How to reach me: [Email Me](mailto:bluntspoon@gmail.com)
+- 🙂 I am Andrew Bevan from [Durban, South Africa](https://goo.gl/maps/rQsiecctb9SovcdG9). 🔴🔵🟡🟢
+- 🔭 I’m a Senior Developer working on few large projects using the Microsoft Tech Stack at one of the largest iGaming Platform Providers [Derivco](https://www.derivco.com).
+- 🌱 I’m currently learning more about Cloud Technologies while furthering my skills as a Software Architect.
 - 😄 Pronouns: he/him/his
 - ⚡ Fact: I enjoy spending time with my family and friends.
+- 📧 Want to connect with me?
+  - dm me on [Twitter](https://twitter.com/bluntspoon)
+  - mail me on [Gmail](mailto:bluntspoon@gmail.com)
+  - follow me on [LinkedIn](https://www.linkedin.com/in/andrew-bevan)
 
 ## Senior Software Developer with expertise in Software Development for the Gaming Industry
 
