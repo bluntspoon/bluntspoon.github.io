@@ -14,7 +14,7 @@ permalink: /about/
   - mail me on [Gmail](mailto:bluntspoon@gmail.com)
   - follow me on [LinkedIn](https://www.linkedin.com/in/andrew-bevan)
 
-## Senior Software Developer with expertise in Software Development for the Gaming Industry
+## Senior Developer with expertise in Software Development for the iGaming Industry
 
 I am a skilled and accomplished IT professional, specialising in software development, utilising Agile methodologies.
 
