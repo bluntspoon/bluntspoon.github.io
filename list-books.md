@@ -3,6 +3,7 @@ layout: page
 title: Books
 permalink: /lists/books
 modified_date: 22/03/2023
+author: Andrew Bevan
 ---
 
 ## [Investments Unlimited](https://www.amazon.com/Investments-Unlimited-Compliance-Thriving-Digital/dp/1950508536/)
