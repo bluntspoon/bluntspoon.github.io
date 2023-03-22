@@ -20,7 +20,7 @@ plugins:
 
 minima:
   skin: auto
-  date_format: "%b %-d, %Y"
+  date_format: "%-d %b %Y"
 
   # Generate social links in footer.
   #
