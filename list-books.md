@@ -24,6 +24,10 @@ permalink: /lists/books
 
 ### A Handbook of Agile Software Craftsmanship
 
+## [The Clean Coder](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/)
+
+### A Code of Conduct for Professional Programmers
+
 ## [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure-ebook/dp/B075LRM681/)
 
 ### A Craftsman's Guide to Software Structure and Design (Robert C. Martin Series)
@@ -31,3 +35,7 @@ permalink: /lists/books
 ## [The Pragmatic Programmer](https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/)
 
 ### Your Journey To Mastery
+
+## [Design Patterns](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8)
+
+### Elements of Reusable Object-Oriented Software
