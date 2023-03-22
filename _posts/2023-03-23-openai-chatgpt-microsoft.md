@@ -2,8 +2,8 @@
 layout: post
 title: "AI, ChatGPT, Bing, Copilot"
 categories: ai
-author: Andrew Bevan
-meta: "Durban"
+author: 
+- Andrew Bevan
 ---
 
 This is the year for AI/ML. Below are a few interesting articles on the recent developments.
