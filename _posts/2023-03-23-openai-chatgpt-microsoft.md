@@ -2,12 +2,12 @@
 layout: post
 title: "AI, ChatGPT, Bing, Copilot"
 categories: ai
-author:
-- Andrew Bevan
+tags: ai openai microsoft bing copilot chatgpt
+author: Andrew Bevan
 meta: "Durban"
 ---
 
-The year for AI/ML is 2023. Below are a few interesting articles on the recent developments.
+This is the year for AI/ML. Below are a few interesting articles on the recent developments.
 
 ## Microsoft & Bing & Copilot
 
