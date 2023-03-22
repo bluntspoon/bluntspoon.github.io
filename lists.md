@@ -14,6 +14,6 @@ These are collections of my favourite Software/Tools, Books/Audiobooks, Movies/S
 
 ### List of all the places I have visited
 
-## [Software] (/lists/software)
+## [Software](/lists/software)
 
 ### List of great software or tools that I use on a daily basis
