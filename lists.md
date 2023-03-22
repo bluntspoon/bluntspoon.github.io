@@ -7,10 +7,18 @@ permalink: /lists/
 
 These are collections of my favourite Software/Tools, Books/Audiobooks, Movies/Series and Travels
 
-## Software & Tools
+## [Books](/lists/books)
 
-## Books & Audiobooks
+### Collection of books that have inspired me throughout my career
+
+## Software & Tools
 
 ## Movies & Series
 
 ## Travels
+
+### Kyiv, Ukraine (2018)
+
+### Bratislava, Slovakia (2018)
+
+### California, United States (2017)
