@@ -2,7 +2,6 @@
 layout: post
 title: "AI, ChatGPT, Bing, Copilot"
 categories: ai
-tags: ai openai microsoft bing copilot chatgpt
 author: Andrew Bevan
 meta: "Durban"
 ---
@@ -19,4 +18,3 @@ This is the year for AI/ML. Below are a few interesting articles on the recent d
 
 - <https://openai.com/blog/chatgpt>
 - <https://openai.com/product/gpt-4>
-
