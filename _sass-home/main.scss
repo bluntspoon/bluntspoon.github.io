@@ -671,145 +671,90 @@ a.circle {
 }
 
 
-
-#menuToggle
-{
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-
-  z-index: 1;
-
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-
-  transition: color 0.3s ease;
-}
-
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
+.site-nav {
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: 9px;
+  right: $spacing-unit * .5;
+  background-color: $background-color;
+  border: 1px solid $border-color-01;
+  border-radius: 5px;
+  text-align: right;
 
-  cursor: pointer;
+  .nav-trigger {
+    display: none;
+  }
 
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  .menu-icon {
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
 
-  -webkit-touch-callout: none;
-}
+    > svg path {
+      fill: $border-color-03;
+    }
+  }
 
-/*
-* Just a quick hamburger
-*/
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
 
-  background: #cdcdcd;
-  border-radius: 3px;
+  input ~ .trigger {
+    clear: both;
+    display: none;
+  }
 
-  z-index: 1;
+  input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
 
-  transform-origin: 4px 0px;
+  .page-link {
+    color: $text-color;
+    line-height: $base-line-height;
+    display: block;
+    padding: 5px 10px;
 
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+    margin-left: 20px;
+  }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
+  @media screen and (min-width: $on-medium) {
+    position: static;
+    float: right;
+    border: none;
+    background-color: inherit;
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
+    label[for="nav-trigger"] {
+      display: none;
+    }
 
-/*
-* Transform all the slices of hamburger
-* into a crossmark.
-*/
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
+    .menu-icon {
+      display: none;
+    }
 
-/*
-* But let's hide the middle one.
-*/
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
+    input ~ .trigger {
+      display: block;
+    }
 
-/*
-* Ohyeah and the last one should go the other direction
-*/
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
+    .page-link {
+      display: inline;
+      padding: 0;
 
-/*
-* Make this absolute positioned
-* at the top left of the screen
-*/
-#menu
-{
-  position: absolute;
-  width: 200px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-/*
-* And let's slide it in from the left
-*/
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: auto;
+    }
+  }
 }
