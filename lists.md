@@ -3,7 +3,6 @@ layout: page
 title: Lists
 permalink: /lists/
 ---
-`This page is a work in progress.`
 
 These are collections of my favourite Software/Tools, Books/Audiobooks, Movies/Series and Places
 
@@ -15,6 +14,6 @@ These are collections of my favourite Software/Tools, Books/Audiobooks, Movies/S
 
 ### List of all the places I have visited
 
-## Software & Tools
+## [Software] (/lists/software)
 
-## Movies & Series
+### List of great software or tools that I use on a daily basis
