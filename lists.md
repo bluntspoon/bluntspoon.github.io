@@ -4,11 +4,11 @@ title: Lists
 permalink: /lists/
 ---
 
-These are collections of my favourite Books, Software/Tools, and Places.
+These are collections of my favourite Books, Software, and Places.
 
 ## [Books](/lists/books)
 
-### Collection of books that have inspired me throughout my career
+### List of epic books that have inspired me throughout my career
 
 ## [Software](/lists/software)
 
@@ -16,4 +16,4 @@ These are collections of my favourite Books, Software/Tools, and Places.
 
 ## [Places](/lists/places)
 
-### List of all the places I have visited
+### List of all the epic places I have visited over the years
