@@ -2,6 +2,7 @@
 layout: post
 title: "ChatGPT, OpenAI, Bing, Microsoft"
 categories: ai
+tags: ai chatgpt openai bing microsoft
 ---
 
 This is the year for AI/ML. Below are a few interesting articles on the recent developments.
