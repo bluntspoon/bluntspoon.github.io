@@ -6,12 +6,9 @@ Domain: <https://andrewbevan.me>
 
 ## TODO
 
-- remove blog
-- add lists
+- update lists
   - books / audiobooks
   - movies
   - tools
   - travels
-- wire-up google analytics
 - work on rewrite and serve from Azure
-- dark mode
