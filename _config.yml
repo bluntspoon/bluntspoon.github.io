@@ -27,7 +27,7 @@ minima:
   social_links:
      - { platform: twitter,        user_url: "https://twitter.com/bluntspoon" }
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/andrew-bevan" }
-     - { platform: github,         user_url: "https://github.com/bluntspoon" }
+     - { platform: github,         user_url: "https://github.com/andrewbevan" }
   #   - { platform: telegram,       user_url: "https://t.me/bluntspoon" }
   #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
   #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
