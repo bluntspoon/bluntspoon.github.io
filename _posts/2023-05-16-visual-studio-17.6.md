@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "New Features in Visual Studio 2022 (v17.6)!"
+title: "New Features in Visual Studio 2022 (v17.6)"
 categories: dev
 tags: visualstudio
 ---
-
-# New Features in Visual Studio 2022 (v17.6)!
 
 Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022. These kind of improvements are intended to help keep you in the zone and flow of development.
 
