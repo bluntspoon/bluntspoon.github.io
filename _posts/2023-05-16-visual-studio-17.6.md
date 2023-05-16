@@ -7,11 +7,18 @@ tags: visualstudio
 
 # New Features in Visual Studio 2022
 
-Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022.
+Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022. These kind of improvements are intended to help keep you in the zone and flow of development.
 
-- 📝 .HTTP Editor with integrated client
-- 🔍 API Endpoints Explorer
+> No more breaking flow just switch tooling so that you can query your endpoints, now you can test them directly from VS.
+
+## 🔍 API Endpoints Explorer
 
 ![Endpoint Explorer](https://andrewbevan.me/assets/images/2023-05-16-endpoint-explorer.png "Endpoint Explorer")
+
+## 📝 .HTTP Editor with integrated client
+
+![Endpoint Explorer](https://andrewbevan.me/assets/images/2023-05-16-http-editor.png ".HTTP Editor")
+
+## Nice Work MS! 😎
 
 Read More: https://devblogs.microsoft.com/visualstudio/web-api-development-in-visual-studio-2022/
