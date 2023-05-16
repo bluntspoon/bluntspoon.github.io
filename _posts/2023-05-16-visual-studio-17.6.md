@@ -19,4 +19,6 @@ Below are two of my favourite new features that were introduced with the recent 
 
 ## Nice Work MS! 😎
 
-Read More: <https://devblogs.microsoft.com/visualstudio/web-api-development-in-visual-studio-2022/>
+Read More: 
+- [https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/)
+- [https://devblogs.microsoft.com/visualstudio/web-api-development-in-visual-studio-2022/](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/)
