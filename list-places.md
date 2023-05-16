@@ -5,6 +5,11 @@ permalink: /lists/places
 modified_date: 22/03/2023
 author: Andrew Bevan
 ---
+
+## Dublin, Ireland (2023)
+
+## England, United Kingdom (2023)
+
 ## Pomene, Mozambique (2020)
 
 ## Kyiv, Ukraine (2018)
