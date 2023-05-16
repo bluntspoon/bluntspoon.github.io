@@ -13,7 +13,7 @@ As a software engineer, this means that if your team is divided into smaller, sp
 To mitigate these potential issues, it's essential for a software engineer to be aware of the impact of their team's organization on the software's architecture and strive to foster good communication, collaboration, and a shared understanding of the system's goals and requirements.
 
 To best follow Conway's Law as a software engineer within an organization, you should focus on the following aspects:
-	
+
 1. **Understand the organizational structure:** Be aware of how your organization is structured, as this will often dictate the communication patterns and the design of the software systems. If possible, participate in discussions to influence the structure for better alignment with the desired software architecture.
 2. **Promote effective communication:** Encourage open communication and collaboration between different teams working on the same system. This will lead to better design decisions and a more coherent software architecture.	
 3. **Modular design:** Design software systems as modular components that can be developed, maintained, and scaled independently. This allows teams to work autonomously and helps to align the software design with the organization's structure.	

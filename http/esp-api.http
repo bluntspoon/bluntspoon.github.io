@@ -1,0 +1,19 @@
+
+@LICENSE_KEY = E5B8547D-3AF94BC4-AB5DF65C-FB9BA794
+@areaId = ethekwini2-5-newgermany
+
+### Get Areas
+GET /business/2.0/areas_search?text=new germany HTTP/1.1
+Token: {{LICENSE_KEY}}
+Host: developer.sepush.co.za
+
+
+### Get Area Info
+GET /business/2.0/area?id={{areaId}} HTTP/1.1
+Token: {{LICENSE_KEY}}
+Host: developer.sepush.co.za
+
+### Check Allowance
+GET /business/2.0/api_allowance HTTP/1.1
+Token: {{LICENSE_KEY}}
+Host: developer.sepush.co.za
