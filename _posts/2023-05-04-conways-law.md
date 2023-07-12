@@ -1,8 +1,15 @@
 ---
 layout: post
-title: "Does your organisation follow Conway's Law?"
-categories: org
-tags: orgs conway law structure
+title: Does your organisation follow Conway's Law?
+categories: dev
+tags:
+  - orgs
+  - conway's law
+  - structure
+date: 2023-05-04
+keywords:
+  - conway's law
+  - dev
 ---
 
 ## Conway's Law states ⚖️
