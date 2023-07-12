@@ -30,15 +30,15 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.5.0
-        with:
-          source: |
-           ./_sass-home/main.scss
-           ./_sass-home/noscript.scss
-          destination: |
-           ./assets/css/main.css
-           ./assets/css/noscript.css
+#       - name: Compile CSS from SCSS files
+#         uses: gha-utilities/sass-build@v0.5.0
+#         with:
+#           source: |
+#            ./_sass-home/main.scss
+#            ./_sass-home/noscript.scss
+#           destination: |
+#            ./assets/css/main.css
+#            ./assets/css/noscript.css
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
