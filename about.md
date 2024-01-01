@@ -10,7 +10,7 @@ permalink: /about/
 - 😄 Pronouns: he/him
 - ⚡ Fact: I enjoy spending time with my family and friends.
 - 📧 Want to connect with me?
-  - dm me on [Twitter](https://twitter.com/bluntspoon)
+  - dm me on [X](https://x.com/bluntspoon)
   - mail me on [Gmail](mailto:bluntspoon@gmail.com)
   - follow me on [LinkedIn](https://www.linkedin.com/in/andrew-bevan)
 
