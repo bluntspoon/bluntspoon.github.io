@@ -2,6 +2,8 @@
 layout: post
 title: Does your organisation follow Conway's Law?
 date: 2023-05-04
+author:
+- Andrew Bevan
 categories: dev
 tags:
   - orgs
