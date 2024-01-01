@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ChatGPT, OpenAI, Bing, Microsoft
+date: 2023-03-23
 categories: dev
 tags:
   - ai 
