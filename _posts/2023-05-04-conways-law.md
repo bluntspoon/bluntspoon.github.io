@@ -7,9 +7,6 @@ tags:
   - conway's law
   - structure
 date: 2023-05-04
-keywords:
-  - conway's law
-  - dev
 ---
 
 ## Conway's Law states ⚖️
