@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New Features in Visual Studio 2022 (v17.6)
+date: 2023-05-16
 categories: dev
 tags: visualstudio
 slug: features-visual-studio-2022-v17-6
