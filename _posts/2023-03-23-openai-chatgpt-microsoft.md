@@ -2,8 +2,6 @@
 layout: post
 title: ChatGPT, OpenAI, Bing, Microsoft
 date: 2023-03-23
-author:
-- Andrew Bevan
 categories: dev
 tags:
   - ai 
