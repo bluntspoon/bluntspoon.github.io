@@ -3,7 +3,11 @@ layout: post
 title: 2024! A New Year, A New Me!
 date: 2024-01-01
 categories: personal
-tags: growth
+tags:
+  - health
+  - growth
+  - life
+  - career
 slug: 2024-new-year-new-me
 ---
 > "If you want to live a happy life, tie it to a goal, not to people or things." - Albert Einstein
