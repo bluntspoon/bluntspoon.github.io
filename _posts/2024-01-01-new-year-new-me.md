@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 2024! A New Year, A New Me!
+date: 2024-01-01
 categories: personal
 tags: growth
 slug: 2024-new-year-new-me
