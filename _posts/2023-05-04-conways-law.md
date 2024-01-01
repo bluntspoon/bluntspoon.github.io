@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Does your organisation follow Conway's Law?
+date: 2023-05-04
 categories: dev
 tags:
   - orgs
   - conway's law
   - structure
-date: 2023-05-04
 ---
 
 ## Conway's Law states ⚖️
