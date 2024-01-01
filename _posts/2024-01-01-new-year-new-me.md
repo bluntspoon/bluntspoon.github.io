@@ -8,7 +8,7 @@ slug: 2024-new-year-new-me
 > "If you want to live a happy life, tie it to a goal, not to people or things." - Albert Einstein
 
 
-# Top 3 Goals for 2024
+# My Top 3 Goals for 2024
 
 ## ❤️‍🩹 Health and Well-being:
 * Prioritize personal health and well-being, with a focus on mental health and body transformation.
