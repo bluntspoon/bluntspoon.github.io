@@ -26,3 +26,7 @@ I have also had the privilege of working with many great people in Derivco, who 
 I am grateful for the opportunity to work at Derivco, a company that values quality, creativity, and collaboration. I am thankful for the amazing people I have met and worked with, who have inspired me and supported me throughout the years. I am proud of what we have accomplished together, and I look forward to more exciting challenges and innovations in the future.
 
 Thank you for being part of my Derivco family. Cheers to 17 years and many more to come!
+
+
+![Derivco](https://andrewbevan.me/assets/images/derivco.jpg "Derivco")
+
