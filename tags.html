@@ -8,7 +8,7 @@ permalink: /tags/
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-<span class="post-tag" >{{ tag | slugify }}</span>
+<span class="post-tag" >{{ t | slugify }}</span>
 <ul class="tag-list">
 {% for post in posts %}
   {% if post.tags contains t %}
