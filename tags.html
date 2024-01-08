@@ -8,12 +8,12 @@ permalink: /tags/
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-{{ t | downcase }}
+<span class="post-tag" >{{ t | downcase }}</span>
 <ul class="tag-list">
 {% for post in posts %}
   {% if post.tags contains t %}
   <li>
-    <a id="{{ t }}" class="post-tag" href="{{ post.url }}">{{ post.title }}</a>
+    <a id="{{ t }}" href="{{ post.url }}">{{ post.title }}</a>
     <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
   </li>
   {% endif %}
