@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Celebrating 17 Years at Derivco"
-date: 2024-01-08 12:00:00 +0000
+date: 2024-01-08 00:00:00 +0000
 categories: [career]
 tags: [milestones]
 description: "A reflection on my journey as a software engineer at Derivco, a leading IT company in the online gaming world."
