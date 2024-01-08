@@ -6,9 +6,6 @@ categories: [career, milestones]
 description: "A reflection on my journey as a software engineer at Derivco, a leading IT company in the online gaming world."
 social_image: /assets/images/derivco.jpg
 ---
-
-# Celebrating 17 Years at Derivco
-
 Today, I am proud to share with you that I have completed 17 years of service at [Derivco](https://derivco.com), a leading IT company in the online gaming world. This is a huge milestone for me, and I want to take this opportunity to reflect on my journey and express my gratitude to everyone who has been part of it.
 
 ## How It All Began
