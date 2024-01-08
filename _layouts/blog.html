@@ -34,7 +34,15 @@ layout: base
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-        <i>Category: {{post.categories | capitalize | join: ', '}}, Tags: {{post.tags | capitalize | join: ', '}}</i>
+
+        {% if page.tags %}
+        <div class="post-tags">
+          {% for tag in page.tags %}
+            <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+
       </li>
       {%- endfor -%}
     </ul>
