@@ -59,3 +59,21 @@ a.circle {
   object-fit: cover;
   padding-bottom: 30px;
 }
+
+.post-tags {
+  margin-top: 10px;
+}
+
+.post-tag {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.post-tag:hover {
+  background-color: #0056b3; /* Adjust the hover color as needed */
+}

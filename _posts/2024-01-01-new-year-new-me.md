@@ -3,11 +3,7 @@ layout: post
 title: 2024! A New Year, A New Me!
 date: 2024-01-01
 categories: personal
-tags:
-  - health
-  - growth
-  - life
-  - career
+tags: [ health, growth, life, career]
 slug: new-year-new-me
 image: /assets/images/featured/2024-01-01-new-year-new-me.jpg
 ---

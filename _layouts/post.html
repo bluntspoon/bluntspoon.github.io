@@ -19,6 +19,16 @@ author:
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+
+      {% if page.tags %}
+      <div class="post-tags">
+        <span>Tags:</span>
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       {%- if page.author -%}
         • {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -44,5 +54,3 @@ author:
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
-
-{{page.tags | capitalize | join: ', '}}
