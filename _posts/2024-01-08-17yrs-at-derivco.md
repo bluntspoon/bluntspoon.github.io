@@ -5,8 +5,8 @@ date: 2024-01-08 00:00:00 +0000
 categories: [career]
 tags: [milestones]
 description: "A reflection on my journey as a software engineer at Derivco, a leading IT company in the online gaming world."
-image: /assets/images/derivco.jpg
-social_image: /assets/images/derivco.jpg
+image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
+social_image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
 ---
 ![Derivco](https://andrewbevan.me/assets/images/derivco.jpg "Derivco")
 
