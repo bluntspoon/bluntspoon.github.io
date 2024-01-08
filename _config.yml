@@ -25,7 +25,7 @@ minima:
   # Generate social links in footer.
   #
   social_links:
-     - { platform: twitter,        user_url: "https://twitter.com/bluntspoon" }
+     - { platform: twitter,        user_url: "https://x.com/bluntspoon" }
      - { platform: linkedin,       user_url: "https://www.linkedin.com/in/andrew-bevan" }
      - { platform: github,         user_url: "https://github.com/andrewbevan" }
   #   - { platform: telegram,       user_url: "https://t.me/bluntspoon" }
@@ -46,7 +46,6 @@ header_pages:
     - blog.md
 
 # Set to `true` to show excerpts on the homepage.
-#
 # show_excerpts: false
 
-google_analytics: UA-12923011-8
+google_analytics: G-VTF49EX4MD

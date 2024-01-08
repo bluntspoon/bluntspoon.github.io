@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "New Features in Visual Studio 2022 (v17.6)"
+title: New Features in Visual Studio 2022 (v17.6)
+date: 2023-05-16
 categories: dev
 tags: visualstudio
+slug: features-visual-studio-2022-v17-6
 ---
 
 Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022. These kind of improvements are intended to help keep you in the zone and flow of development.
@@ -19,4 +21,6 @@ Below are two of my favourite new features that were introduced with the recent 
 
 ## Nice Work MS! 😎
 
-Read More: <https://devblogs.microsoft.com/visualstudio/web-api-development-in-visual-studio-2022/>
+Read More: 
+- [https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/)
+- [https://devblogs.microsoft.com/visualstudio/web-api-development-in-visual-studio-2022/](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-6-now-available/)

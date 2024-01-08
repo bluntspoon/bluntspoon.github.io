@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 <head>
   <title>{{ page.title | escape }}</title>
   <meta charset="utf-8" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="description" content="About me and my thoughts on Web, Code, Technology and Life">
-  <meta name="keywords" content="Andrew Bevan, About, Blog, Career Development, Code Quality, Online Identity, Personal Development, Code, Typescript, Javascript, Twitter, Visual Studio, ASPNET, CSharp, C#">
+  <meta name="keywords"
+    content="Andrew Bevan, About, Blog, Career Development, Code Quality, Online Identity, Personal Development, Code, Typescript, Javascript, Twitter, Visual Studio, ASPNET, CSharp, C#">
   <meta name="author" content="Andrew Bevan">
   <meta name="copyright" content="Andrew Bevan">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="About me and my thoughts on Web, Code, Technology and Life">
@@ -17,13 +17,13 @@
   <meta name="twitter:title" content="Andrew Bevan">
   <meta name="twitter:description" content="About me and my thoughts on Web, Code, Technology and Life">
   <meta name="twitter:creator" content="@bluntspoon">
-  <meta name="twitter:image" content="https://andrewbevan.me/assets/images/andrew-bevan.png">
+  <meta name="twitter:image" content="https://andrewbevan.me/assets/css/images/andrew-bevan.png">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="Andrew Bevan" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://andrewbevan.me" />
-  <meta property="og:image" content="https://andrewbevan.me/assets/images/andrew-bevan.png" />
+  <meta property="og:image" content="https://andrewbevan.me/assets/images/bg.png" />
   <meta property="og:description" content="About me and my thoughts on Web, Code, Technology and Life" />
   <meta property="og:site_name" content="Andrew Bevan" />
   <meta property="og:locale" content="en_GB" />
@@ -35,18 +35,20 @@
   <link href="https://www.youtube.com/user/bluntspoonZA" rel="me">
 
   <!-- Icons and Theme -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/css/icons/apple-touch-icon.png?v=20230320">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/css/icons/favicon-32x32.png?v=20230320">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/css/icons/favicon-16x16.png?v=20230320">
-  <link rel="manifest" href="assets/css/icons/site.webmanifest?v=20230320">
-  <link rel="mask-icon" href="assets/css/icons/safari-pinned-tab.svg?v=20230320" color="#5bbad5">
-  <link rel="shortcut icon" href="assets/css/icons/favicon.ico?v=20230320">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/css/icons/apple-touch-icon.png?v=20230320">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/css/icons/favicon-32x32.png?v=20230320">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/css/icons/favicon-16x16.png?v=20230320">
+  <link rel="manifest" href="../assets/css/icons/site.webmanifest?v=20230320">
+  <link rel="mask-icon" href="../assets/css/icons/safari-pinned-tab.svg?v=20230320" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/css/icons/favicon.ico?v=20230320">
   <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="msapplication-config" content="assets/css/icons/browserconfig.xml?v=20230320">
+  <meta name="msapplication-config" content="../assets/css/icons/browserconfig.xml?v=20230320">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="assets/css/main.css?v=20230320" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css?v=20230320" /></noscript>
+  <link rel="stylesheet" href="../assets/css/main.css?v=20230320" />
+  <noscript>
+    <link rel="stylesheet" href="../assets/css/noscript.css?v=20230320" />
+  </noscript>
 
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
@@ -54,40 +56,45 @@
 </head>
 
 <body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-      <div id="main">
+  <div id="wrapper">
+    <div id="bg"></div>
+    <div id="overlay"></div>
+    <div id="main">
 
-				<!-- Header -->
-					<header id="header">
-            <a href="https://andrewbevan.me/about/" class="circle blue">
-              <img height="128" width="128" src="/assets/css/images/andrew-bevan.png" alt="Andrew Bevan">
-            </a>
-            <h1>Andrew Bevan</h1>
-						<p>Father &nbsp;&bull;&nbsp; Husband &nbsp;&bull;&nbsp; Developer &nbsp;&bull;&nbsp; Maker</p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/bluntspoon" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://linkedin.com/in/andrew-bevan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/bluntspoon" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:bluntspoon@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+      <!-- Header -->
+      <header id="header">
+        <a href="https://andrewbevan.me/about/" class="circle blue">
+          <img height="128" width="128" src="/assets/css/images/andrew-bevan.png" alt="Andrew Bevan">
+        </a>
+        <h1>Andrew Bevan</h1>
+        <p>Father &nbsp;&bull;&nbsp; Husband &nbsp;&bull;&nbsp; Developer &nbsp;&bull;&nbsp; Maker</p>
+        <nav>
+          <ul>
+            <li><a href="https://twitter.com/bluntspoon" class="fa-brands fa-x-twitter"><span
+                  class="label">Twitter</span></a></li>
+            <li><a href="https://linkedin.com/in/andrew-bevan" class="fa-brands fa-linkedin"><span
+                  class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/bluntspoon" class="fa-brands fa-github"><span
+                  class="label">Github</span></a></li>
+            <li><a href="mailto:bluntspoon@gmail.com" class="fa-solid fa-envelope"><span class="label">Email</span></a>
+            </li>
+            <li><a href="/about" class="fa-solid fa-ellipsis-vertical"><span class="label">About</span></a></li>
+          </ul>
+        </nav>
+      </header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Andrew Bevan powered by <a href="https://jekyllrb.com/">Jekyll</a>.</span>
-					</footer>
+      <!-- Footer -->
+      <footer id="footer">
+        <span class="copyright">&copy; Andrew Bevan powered by <a href="https://jekyllrb.com/">Jekyll</a>.</span>
+      </footer>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
+    </div>
+  </div>
+  <script>
+    window.onload = function () { document.body.classList.remove('is-preload'); }
+    window.ontouchmove = function () { return false; }
+    window.onorientationchange = function () { document.body.scrollTop = 0; }
+  </script>
 </body>
 
 </html>
