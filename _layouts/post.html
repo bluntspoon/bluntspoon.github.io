@@ -22,7 +22,6 @@ author:
 
       {% if page.tags %}
       <div class="post-tags">
-        <span>Tags:</span>
         {% for tag in page.tags %}
           <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
         {% endfor %}
