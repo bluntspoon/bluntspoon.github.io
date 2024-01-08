@@ -34,7 +34,7 @@ layout: base
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-        <i>Category: {{ post.categories }}, Tags: {{ post.tags }}</i>
+        <i>Category: {{post.categories | capitalize | join: ', '}}, Tags: {{post.tags | capitalize | join: ', '}}</i>
       </li>
       {%- endfor -%}
     </ul>
