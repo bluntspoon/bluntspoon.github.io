@@ -11,6 +11,7 @@ tags:
 slug: new-year-new-me
 image: /assets/images/featured/2024-01-01-new-year-new-me.jpg
 ---
+
 > "If you want to live a happy life, tie it to a goal, not to people or things." - Albert Einstein
 
 ## My Top 3 Goals for 2024
