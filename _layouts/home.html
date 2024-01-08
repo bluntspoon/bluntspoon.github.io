@@ -81,8 +81,9 @@
             <li><a href="/about" class="fa-solid fa-ellipsis-vertical"><span class="label">About</span></a></li>
           </ul>
         </nav>
-
-        <i>{{ site.posts.first.title }}</i>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ site.posts.first | escape }}
+        </a>
       </header>
 
 
