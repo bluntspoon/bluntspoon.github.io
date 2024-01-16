@@ -23,8 +23,13 @@ jobs:
         with:
           source: ./
           destination: ./output
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rX "./output" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./output
 
