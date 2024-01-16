@@ -26,17 +26,12 @@ minima:
   # Generate social links in footer.
   #
   social_links:
-     - { platform: github,         user_url: "https://github.com/andrewbevan" }
-     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/andrew-bevan" }
-     - { platform: twitter,        user_url: "https://x.com/bluntspoon" }
-  #   - { platform: telegram,       user_url: "https://t.me/bluntspoon" }
-  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
-  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
-  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
-  #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
-  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+     - platform: github
+       user_url: "https://github.com/andrewbevan"
+     - platform: linkedin
+       user_url: "https://www.linkedin.com/in/andrew-bevan"
+     - platform: twitter
+       user_url: "https://x.com/bluntspoon"
 
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
