@@ -4,9 +4,9 @@ set -e
 
 script/build
 
-if test -e "./_site/index.html";then
+if test -e "./output/index.html";then
   echo "It builds!"
-  rm -Rf _site
+  rm -Rf output
 else
   echo "Huh. That's odd. The example site doesn't seem to build."
   exit 1
