@@ -41,6 +41,9 @@
     <link rel="stylesheet" href="../assets/css/noscript.css?{{ site.time | date: '%s%N' }}" />
   </noscript>
 
+  <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+  <link rel="preload" fetchpriority="high" as="image" href="../assets/css/images/bg.jpg?{{ site.time | date: '%s%N' }}" type="image/jpg">
+  
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}
