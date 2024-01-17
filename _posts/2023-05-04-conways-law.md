@@ -3,11 +3,9 @@ layout: post
 title: Does your organisation follow Conway's Law?
 date: 2023-05-04
 categories: dev
-tags:
-  - orgs
-  - conway's law
-  - structure
+tags: [orgs, conway's law, structure]
 ---
+> "Organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations." - Melvin E. Conway
 
 ## Conway's Law states ⚖️
 

@@ -19,6 +19,15 @@ author:
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+
+      {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
       {%- if page.author -%}
         • {% for author in page.author %}
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -29,6 +38,12 @@ author:
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.image -%}
+    <img src="{{ page.image | relative_url }}"  alt="featured image"  class="featured-image-post"/>
+    {%- else -%}
+    <img src="/assets/images/featured/default.png"  alt="featured image"  class="featured-image-post"/>
+    {%- endif -%}
+
     {{ content }}
   </div>
 
