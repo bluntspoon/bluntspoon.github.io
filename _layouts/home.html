@@ -12,16 +12,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <meta name="twitter:card" content="About me and my thoughts on Web, Code, Technology and Life">
   <meta name="twitter:site" content="@bluntspoon">
-  <meta name="twitter:title" content="Andrew Bevan">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="About me and my thoughts on Web, Code, Technology and Life">
   <meta name="twitter:creator" content="@bluntspoon">
   <meta name="twitter:image" content="https://andrewbevan.me/assets/css/images/andrew-bevan.png?{{ site.time | date: '%s%N' }}">
-  <meta property="og:title" content="Andrew Bevan" />
+  <meta property="og:title" content="{{ page.title | escape }}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://andrewbevan.me" />
   <meta property="og:image" content="https://andrewbevan.me/assets/css/images/og-image.png?{{ site.time | date: '%s%N' }}" />
   <meta property="og:description" content="About me and my thoughts on Web, Code, Technology and Life" />
-  <meta property="og:site_name" content="Andrew Bevan" />
+  <meta property="og:site_name" content="{{ page.title | escape }}" />
   <meta property="og:locale" content="en_GB" />
   <meta itemprop="name" content="Andrew Bevan">
   <link rel="openid.delegate" href="https://www.andrewbevan.me">
@@ -69,6 +69,7 @@
       </header>
       <!-- Footer -->
       <footer id="footer">
+        <span class="copyright">{{ page.description | escape }}</span>
         <span class="copyright">&copy; Andrew Bevan powered by <a href="https://jekyllrb.com/">Jekyll</a>.</span>
       </footer>
     </div>
