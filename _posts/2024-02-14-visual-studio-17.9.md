@@ -7,18 +7,19 @@ tags: [visualstudio]
 slug: features-visual-studio-2022-v17-9
 ---
 
-Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022. These kind of improvements are intended to help keep you in the zone and flow of development.
-
-> No more breaking flow just switch tooling so that you can query your endpoints, now you can test them directly from VS.
+VS is continuously improving with each release. The latest update to Visual Studio 2022 (v17.9) introduces several exciting features and enhancements. Here are a few of my favorites:
 
 ## 💬 AI Generated Git commit messages
 
-> Use the new generated Git commit message feature to help you describe your set of changes
+Use the new generated Git commit message feature to help you describe your set of changes.
+
 ![Endpoint Explorer](https://andrewbevan.me/assets/images/2023-05-16-endpoint-explorer.png "Endpoint Explorer")
+
+> Note: Github Copilot + Chat is required for this feature.
 
 ## 🔍 'all-in-on' Code Search
 
-> You can now search for any word or string of characters across your solution.
+You can now search for any word or string of characters across your solution.
 
 ![Endpoint Explorer](https://andrewbevan.me/assets/images/2023-05-16-http-editor.png ".HTTP Editor")
 
