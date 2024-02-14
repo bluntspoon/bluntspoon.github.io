@@ -1,4 +1,4 @@
-title: Andrew Bevan
+title: Andrew Bevan | Coding, Technology and Life
 author:
   name: Andrew Bevan
   email: bluntspoon@gmail.com
@@ -6,7 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Andrew Bevan on Code, Technology and Life.
+  Andrew Bevan on Coding, Technology and Life.
 
 # Build settings
 

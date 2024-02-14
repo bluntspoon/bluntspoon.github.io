@@ -4,7 +4,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <a href="https://andrewbevan.me/" class="circle blue">
-      <img height="30" width="30" src="/assets/css/images/andrew-bevan.png" alt="Andrew Bevan">
+      <img height="30" width="30" src="/assets/css/images/andrew-bevan.png?{{ site.time | date: '%s%N' }}" alt="Andrew Bevan">
     </a>
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 

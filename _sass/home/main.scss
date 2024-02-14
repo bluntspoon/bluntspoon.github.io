@@ -294,7 +294,7 @@ a {
 
 @include keyframes("wrapper") {
   0% {
-    opacity: 0;
+    opacity: 0.01;
   }
   100% {
     opacity: 1;
@@ -335,7 +335,7 @@ a {
 
 @include keyframes("overlay") {
   0% {
-    opacity: 0;
+    opacity: 0.01;
   }
   100% {
     opacity: 1;
@@ -385,7 +385,7 @@ a {
 @include keyframes("header") {
   0% {
     @include vendor("transform", "translate3d(0,1em,0)");
-    opacity: 0;
+    opacity: 0.01;
   }
   100% {
     @include vendor("transform", "translate3d(0,0,0)");
@@ -396,7 +396,7 @@ a {
 @include keyframes("nav-icons") {
   0% {
     @include vendor("transform", "translate3d(0,1em,0)");
-    opacity: 0;
+    opacity: 0.01;
   }
   100% {
     @include vendor("transform", "translate3d(0,0,0)");
