@@ -1,10 +1,13 @@
 ---
 layout: post
 title: New Features in Visual Studio 2022 (v17.9)
-date: 2024-02-14
-categories: dev
+date: 2024-02-14 00:00:00 +0000
+categories: [dev]
 tags: [visualstudio]
 slug: features-visual-studio-2022-v17-9
+description: "The latest update to Visual Studio 2022 (v17.9)."
+image: /assets/images/featured/2024-02-14-visual-studio-17.9.jpg
+social_image: /assets/images/featured/2024-02-14-visual-studio-17.9.jpg
 ---
 
 VS is continuously improving with each release. The latest update to Visual Studio 2022 (v17.9) introduces several exciting features and enhancements. Here are a few of my favorites:
