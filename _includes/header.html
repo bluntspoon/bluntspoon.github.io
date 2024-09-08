@@ -6,7 +6,9 @@
     <a href="https://andrewbevan.me/" class="circle blue">
       <img height="30" width="30" src="/assets/css/images/andrew-bevan.png?{{ site.time | date: '%s%N' }}" alt="Andrew Bevan">
     </a>
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }} | <span style="font-size: small;">{{ site.title-detail | escape }}</span></a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}
+      <span style="font-size: x-small; word-wrap: break-word"> ~ {{ site.title-detail | escape }}</span>
+    </a>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
