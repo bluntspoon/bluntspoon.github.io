@@ -2,7 +2,7 @@
 layout: page
 title: Places
 permalink: /lists/places
-modified_date: 09/10/2023
+modified_date: 08/01/2024
 author: Andrew Bevan
 ---
 >List of epic places I have visited over the years.
