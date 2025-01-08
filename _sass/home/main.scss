@@ -322,6 +322,7 @@ a {
   background: _misc(bg);
 
   background-repeat: repeat-x;
+  background-size: 200% auto; // Ensure the background size covers the animation duration
   height: 100%;
   left: 0;
   opacity: 1;
