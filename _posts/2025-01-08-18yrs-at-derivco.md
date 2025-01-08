@@ -1,6 +1,5 @@
 ---
 layout: post
-author: Andrew Bevan
 title: "18 Years at Derivco 🎉"
 date: 2025-01-08 00:00:00 +0000
 categories: [career]
