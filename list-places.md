@@ -5,31 +5,30 @@ permalink: /lists/places
 modified_date: 09/10/2023
 author: Andrew Bevan
 ---
+>List of epic places I have visited over the years.
 
-## Ireland, United Kingdom (2023)
+## [Ireland, United Kingdom](https://www.ireland.com/) (2023)
+A short three-day stopover to do some sightseeing while visiting the UK.
 
-### Short three day stop over to do some sightseeing while over in the UK
+## [England, United Kingdom](https://www.visitlondon.com/) (2023)
+Attended [QCon London](https://qconlondon.com/) and explored the city with Tracey during the trip.
 
-## England, United Kingdom (2023)
+## [Pomene, Mozambique](https://www.visitmozambique.net/destination/pomene/) (2020)
+Enjoyed a relaxing vacation and cruise to the island for a few days of leisure.
 
-### Attended QCon in London and did some sightseeing with Tracey while there
+## [Kyiv, Ukraine](https://www.visitukraine.today/) (2018)
+Provided onboarding support to our new team and took the opportunity to explore the city.
 
-## Pomene, Mozambique (2020)
+## [Bratislava, Slovakia](https://www.visitbratislava.com/) (2018)
+Participated in the [MPN Poker Tour](https://www.onlinegamblingwebsites.com/blog/goodbye-microgaming-poker-mpn-closes-after-17-years-of-action/) and conducted surveys on our new Poker Client Software.
 
-### Vacation and cruise to the island for a few days
+## [California, United States](https://www.visitcalifornia.com/) (2017)
+Attended [FluentConf](https://conferences.oreilly.com/fluent/fl-ca) in San Jose, explored San Francisco, visited the iconic Golden Gate Bridge, saw the famous Alcatraz Island prison, and enjoyed the vibrant nightlife in San Jose.
 
-## Kyiv, Ukraine (2018)
+## [Portuguese Island, Mozambique](https://www.visitmozambique.net/destination/portuguese-island/) (2017)
+Vacationed on a cruise to the island for three nights of relaxation and exploration.
 
-### Provided onboarding support to our new team and did some sightseeing
+---
 
-## Bratislava, Slovakia (2018)
-
-### Attended the MPN Poker Tour and conducted surveys on our new Poker Client
-
-## California, United States (2017)
-
-### Attended FluentConf in San Jose and did some sightseeing while there
-
-## Portuguese Island, Mozambique (2017)
-
-### Vacation and cruise to the island for a 3 nights
+*This list is a work in progress. More destinations and experiences will be added as my journeys continue.*
+while there
