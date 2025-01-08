@@ -16,4 +16,4 @@ permalink: /lists/
 
 ## [Places](/lists/places)
 
-### List of exciting places I have visited over the years
+### List of exciting places I have visited over the years.
