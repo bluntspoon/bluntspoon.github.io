@@ -6,11 +6,13 @@ modified_date: 09/10/2023
 author: Andrew Bevan
 ---
 >List of epic places I have visited over the years.
+## [Cape Town, South Africa](https://www.capetown.travel/) (March 2024)
+Embarked on a massive two-week road trip with my family, exploring breathtaking destinations along the way. Highlights included the Eastern Cape, Coffee Bay, East London, Tsitsikamma, Cape Agulhas (the southernmost tip of Africa), Cape Town, the Western Cape, and the stunning Cango Caves.
 
-## [Ireland, United Kingdom](https://www.ireland.com/) (2023)
+## [Ireland, United Kingdom](https://www.ireland.com/) (March 2023)
 A short three-day stopover to do some sightseeing while visiting the UK.
 
-## [England, United Kingdom](https://www.visitlondon.com/) (2023)
+## [England, United Kingdom](https://www.visitlondon.com/) (March 2023)
 Attended [QCon London](https://qconlondon.com/) and explored the city with Tracey during the trip.
 
 ## [Pomene, Mozambique](https://www.visitmozambique.net/destination/pomene/) (2020)
