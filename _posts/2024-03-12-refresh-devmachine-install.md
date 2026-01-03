@@ -6,7 +6,6 @@ categories: [dev]
 tags: [hardware, windows, setup, productivity]
 slug: refresh-devmachine
 description: "A complete refresh of my daily driver development laptop with hardware upgrades and a clean Windows 11 installation."
-image: /assets/images/featured/2024-03-12-refresh-devmachine.jpg
 ---
 
 > "A well-maintained development machine is like a well-tuned instrument—it makes creating great software so much more enjoyable."
