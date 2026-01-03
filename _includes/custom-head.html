@@ -13,11 +13,12 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Mobile dropdown toggle - using 50em (800px) to match SCSS breakpoint
+  const MOBILE_BREAKPOINT = 800; // 50em = 800px at default 16px base
   const dropdowns = document.querySelectorAll('.site-nav .has-dropdown');
   dropdowns.forEach(function(dropdown) {
     const link = dropdown.querySelector('.page-link');
     link.addEventListener('click', function(e) {
-      if (window.innerWidth < 800) { // 50em = 800px
+      if (window.innerWidth < MOBILE_BREAKPOINT) {
         e.preventDefault();
         dropdown.classList.toggle('open');
       }
