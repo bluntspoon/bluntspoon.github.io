@@ -12,12 +12,12 @@
 <!-- Navigation Enhancement Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile dropdown toggle
+  // Mobile dropdown toggle - using 50em (800px) to match SCSS breakpoint
   const dropdowns = document.querySelectorAll('.site-nav .has-dropdown');
   dropdowns.forEach(function(dropdown) {
     const link = dropdown.querySelector('.page-link');
     link.addEventListener('click', function(e) {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 800) { // 50em = 800px
         e.preventDefault();
         dropdown.classList.toggle('open');
       }
