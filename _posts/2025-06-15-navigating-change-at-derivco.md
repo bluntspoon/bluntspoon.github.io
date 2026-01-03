@@ -17,7 +17,7 @@ If you're one of the many talented individuals who are moving on from Derivco, I
 
 ### Embrace This New Chapter
 
-While it may not feel like it right now, this change is an opportunity—a chance to explore new paths, take on different challenges, and discover strengths you didn't know you had. The skills, experiences, and relationships you've built at Derivco are yours to carry forward. They'll serve you well wherever your journey takes you next.
+While it may not feel like it right now, this change is an opportunity — a chance to explore new paths, take on different challenges, and discover strengths you didn't know you had. The skills, experiences, and relationships you've built at Derivco are yours to carry forward. They'll serve you well wherever your journey takes you next.
 
 ### Change Makes Us Stronger
 
@@ -37,7 +37,7 @@ It's natural to feel uncertain during times of change. But we need to stay posit
 
 ### Work Smarter, Not Harder
 
-One of the silver linings of this era is the incredible pace of technological advancement—particularly in AI. We have tools at our disposal that can help us work more efficiently, automate repetitive tasks, and focus on what truly matters: innovation, creativity, and delivering value. Let's embrace these technologies and use them to amplify our impact. Working smarter, not harder, isn't just a cliché—it's a necessity and an opportunity.
+One of the silver linings of this era is the incredible pace of technological advancement — particularly in AI. We have tools at our disposal that can help us work more efficiently, automate repetitive tasks, and focus on what truly matters: innovation, creativity, and delivering value. Let's embrace these technologies and use them to amplify our impact. Working smarter, not harder, isn't just a cliché — it's a necessity and an opportunity.
 
 ### Building the Future Together
 
