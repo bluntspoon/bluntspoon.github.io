@@ -2,6 +2,7 @@
 layout: page
 title: Lists
 permalink: /lists/
+description: "Curated collections of inspiring books, essential software tools, and exciting places that have shaped my career and life journey."
 ---
 
 >These are collections of my favourite Books, Software, and Places.

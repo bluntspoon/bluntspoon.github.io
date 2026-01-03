@@ -5,6 +5,7 @@ date: 2023-05-16
 categories: dev
 tags: [visualstudio]
 slug: features-visual-studio-2022-v17-6
+description: "Discover the exciting new API Endpoints Explorer and .HTTP Editor features in Visual Studio 2022 version 17.6."
 ---
 
 Below are two of my favourite new features that were introduced with the recent update to Visual Studio 2022. These kind of improvements are intended to help keep you in the zone and flow of development.

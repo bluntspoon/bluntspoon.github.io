@@ -6,6 +6,7 @@ categories: personal
 tags: [ health, growth, life, career]
 slug: new-year-new-me
 image: /assets/images/featured/2024-01-01-new-year-new-me.jpg
+description: "My top 3 goals for 2024: prioritizing health and well-being, achieving work-life balance, and professional development."
 ---
 
 > "If you want to live a happy life, tie it to a goal, not to people or things." - Albert Einstein

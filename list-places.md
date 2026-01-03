@@ -4,6 +4,7 @@ title: Places
 permalink: /lists/places
 modified_date: 08/01/2024
 author: Andrew Bevan
+description: "Exciting places I've visited over the years, from Cape Town to California, including adventures across Africa, Europe, and the United States."
 ---
 >List of epic places I have visited over the years.
 

@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "Andrew Bevan - Senior Developer with 15+ years of software development experience in the iGaming industry, specializing in .NET, C#, and Azure cloud technologies."
 ---
 
 - 🙂 I am Andrew Bevan from [Durban, South Africa](https://goo.gl/maps/rQsiecctb9SovcdG9). 🔴🔵🟡🟢

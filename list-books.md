@@ -4,6 +4,7 @@ title: Books
 permalink: /lists/books
 modified_date: 22/03/2023
 author: Andrew Bevan
+description: "Epic books that have inspired my software development career, from DevOps classics to clean code principles and architecture patterns."
 ---
 
 ## [Investments Unlimited](https://www.amazon.com/Investments-Unlimited-Compliance-Thriving-Digital/dp/1950508536/)
