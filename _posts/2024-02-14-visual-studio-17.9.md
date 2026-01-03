@@ -3,9 +3,9 @@ layout: post
 title: New Features in Visual Studio 2022 (v17.9)
 date: 2024-02-14 00:00:00 +0000
 categories: [dev]
-tags: [visualstudio]
+tags: [visualstudio, ai, productivity]
 slug: features-visual-studio-2022-v17-9
-description: "The latest update to Visual Studio 2022 (v17.9)."
+description: "Discover the exciting AI-powered features in Visual Studio 2022 v17.9, including AI-generated commit messages and enhanced IntelliSense."
 image: /assets/images/featured/2024-02-14-visual-studio-17.9.jpg
 social_image: /assets/images/featured/2024-02-14-visual-studio-17.9.jpg
 ---
