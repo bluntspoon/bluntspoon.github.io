@@ -1,0 +1,9 @@
+{%- if page.url contains '/lists/' and page.url != '/lists/' -%}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <span class="separator">›</span>
+  <a href="{{ '/lists/' | relative_url }}">Lists</a>
+  <span class="separator">›</span>
+  <span class="current">{{ page.title }}</span>
+</nav>
+{%- endif -%}
