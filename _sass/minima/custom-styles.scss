@@ -172,8 +172,7 @@ a.circle {
 }
 
 .site-nav .dropdown-menu a {
-  display: flex;
-  align-items: center;
+  display: block;
   padding: 12px 18px;
   color: #424242;
   text-decoration: none;
@@ -271,10 +270,6 @@ a.circle {
   .site-nav .dropdown-menu a:hover {
     background-color: #f0f7fa;
     padding-left: 18px;
-  }
-
-  .site-nav .has-dropdown > a::after {
-    float: right;
   }
 }
 
