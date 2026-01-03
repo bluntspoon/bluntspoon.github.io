@@ -62,11 +62,12 @@ a.circle {
 
 .post-tags {
   margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .post-tag {
-  display: inline-block;
-  margin-right: 3px;
   background-color: #3c92b5; /* Adjust the background color as needed */
   color: #fff;
   padding: 0px 5px 0px 5px;
