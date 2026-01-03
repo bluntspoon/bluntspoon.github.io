@@ -106,7 +106,7 @@ a.circle {
 }
 
 /* Desktop navigation - enhanced underline effect */
-@media screen and (min-width: 50em) {
+@media screen and (min-width: $on-medium) {
   .site-nav .page-link {
     padding-bottom: 5px;
   }
@@ -225,7 +225,7 @@ a.circle {
 }
 
 /* Mobile navigation improvements */
-@media screen and (max-width: 49.9em) {
+@media screen and (max-width: $on-medium - 1px) {
   .site-nav .page-link {
     font-size: 1.1em;
     padding: 10px 15px;

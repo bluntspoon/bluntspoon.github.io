@@ -12,12 +12,15 @@
 <!-- Navigation Enhancement Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile dropdown toggle - using 50em (800px) to match SCSS breakpoint
-  const MOBILE_BREAKPOINT = 800; // 50em = 800px at default 16px base
+  // Mobile dropdown toggle - using $on-medium breakpoint (600px)
+  const MOBILE_BREAKPOINT = 600; // Matches $on-medium in minima theme
   const dropdowns = document.querySelectorAll('.site-nav .has-dropdown');
+  
   dropdowns.forEach(function(dropdown) {
     const link = dropdown.querySelector('.page-link');
+    
     link.addEventListener('click', function(e) {
+      // On mobile/tablet, toggle dropdown instead of following link
       if (window.innerWidth < MOBILE_BREAKPOINT) {
         e.preventDefault();
         dropdown.classList.toggle('open');
