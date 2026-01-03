@@ -4,6 +4,7 @@ title: Software
 permalink: /lists/software
 modified_date: 22/03/2023
 author: Andrew Bevan
+description: "Essential software and tools I use daily: Visual Studio, VS Code, ChatGPT, and GitHub Copilot for modern software development."
 ---
 >List of great software or tools that I use in my "daily grind".
 
