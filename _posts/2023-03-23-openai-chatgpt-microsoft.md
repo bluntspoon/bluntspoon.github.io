@@ -4,6 +4,7 @@ title: ChatGPT, OpenAI, Bing, Microsoft
 date: 2023-03-23
 categories: dev
 tags: [ ai, chatgpt, openai, bing, microsoft]
+description: "Exploring the latest AI developments from Microsoft, OpenAI, Bing, and the revolutionary ChatGPT in 2023."
 ---
 
 This is the year for AI/ML. Below are a few interesting articles on the recent developments.
