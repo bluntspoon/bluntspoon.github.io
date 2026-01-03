@@ -3,7 +3,8 @@ layout: post
 title: "Navigating Change at Derivco: Strength Through Transition 💪"
 date: 2025-06-15 00:00:00 +0000
 categories: [career]
-tags: [derivco, change, growth, resilience]
+tags: [derivco, change, growth, resilience, leadership]
+slug: navigating-change-derivco
 description: "Reflections on navigating organizational change, embracing new opportunities, and building a stronger future together."
 image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
 social_image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
