@@ -82,3 +82,163 @@ a.circle {
 .post-tag:hover {
   background-color: #0082b7; /* Adjust the hover color as needed */
 }
+
+/* Navigation Improvements */
+
+/* Active page indicator */
+.site-nav .page-link.active {
+  font-weight: 600;
+  color: #3c92b5;
+  border-bottom: 2px solid #3c92b5;
+  padding-bottom: 3px;
+}
+
+/* Better hover effects for navigation links */
+.site-nav .page-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.site-nav .page-link:hover {
+  color: #3c92b5;
+}
+
+/* Desktop navigation - underline effect on hover */
+@media screen and (min-width: 50em) {
+  .site-nav .page-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: #3c92b5;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  .site-nav .page-link:hover::after {
+    width: 100%;
+  }
+
+  .site-nav .page-link.active::after {
+    width: 100%;
+  }
+}
+
+/* Dropdown menu styles for Lists submenu */
+.site-nav .has-dropdown {
+  position: relative;
+}
+
+.site-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 160px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.site-nav .has-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.site-nav .dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #424242;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.site-nav .dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.site-nav .dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  color: #3c92b5;
+}
+
+/* Dark mode support for dropdown */
+@media (prefers-color-scheme: dark) {
+  .site-nav .dropdown-menu {
+    background-color: #2d2d2d;
+    border-color: #4a4a4a;
+  }
+
+  .site-nav .dropdown-menu a {
+    color: #ddd;
+    border-bottom-color: #4a4a4a;
+  }
+
+  .site-nav .dropdown-menu a:hover {
+    background-color: #3a3a3a;
+    color: #3c92b5;
+  }
+}
+
+/* Mobile dropdown adjustments */
+@media screen and (max-width: 49.9em) {
+  .site-nav .dropdown-menu {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border: none;
+    border-left: 3px solid #3c92b5;
+    margin-left: 20px;
+    background-color: transparent;
+  }
+
+  .site-nav .has-dropdown.open .dropdown-menu {
+    display: block;
+  }
+
+  .site-nav .dropdown-menu a {
+    padding: 5px 10px;
+    border-bottom: none;
+  }
+}
+
+/* Dropdown indicator arrow */
+.site-nav .has-dropdown > a::after {
+  content: ' ▾';
+  font-size: 0.8em;
+  margin-left: 3px;
+}
+
+/* Breadcrumb navigation styles */
+.breadcrumbs {
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #828282;
+}
+
+.breadcrumbs a {
+  color: #3c92b5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: #0082b7;
+  text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+  margin: 0 8px;
+  color: #bbb;
+}
+
+.breadcrumbs .current {
+  color: #424242;
+  font-weight: 500;
+}
