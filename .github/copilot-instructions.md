@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a personal/professional website built with Jekyll and hosted on GitHub Pages. The site uses the Minima theme and includes blog posts, lists, and an about page. The domain is <https://andrewbevan.me>, managed through Cloudflare.
+This is a personal/professional website built with Jekyll and hosted on GitHub Pages. The site uses the Minima theme and includes blog posts, lists, and an about page. The domain is [https://andrewbevan.me](https://andrewbevan.me), managed through Cloudflare.
 
 ## Technology Stack
 
@@ -57,6 +57,9 @@ bundle exec jekyll build
 - `_sass/` - Sass stylesheets
 - `assets/` - Static assets (images, CSS, JS)
 - `script/` - Build and development scripts
+- `.github/` - GitHub configuration (workflows, this instructions file)
+- `.vscode/` - VS Code editor settings
+- `.frontmatter/` - Frontmatter CMS configuration
 - `*.md` - Top-level pages (about, blog, lists, etc.)
 
 ## Coding Guidelines
