@@ -2,9 +2,9 @@
 layout: page
 title: Places
 permalink: /lists/places
-modified_date: 08/01/2024
+modified_date: 03/01/2026
 author: Andrew Bevan
-description: "Exciting places I've visited over the years, from Cape Town to California, including adventures across Africa, Europe, and the United States."
+description: Memorable destinations from South Africa to Europe, including Cape Town, London, Ireland, California, and Mozambique.
 ---
 >List of epic places I have visited over the years.
 
@@ -35,4 +35,3 @@ Vacationed on a cruise to the island for three nights of relaxation and explorat
 ---
 
 *This list is a work in progress. More destinations and experiences will be added as my journeys continue.*
-while there

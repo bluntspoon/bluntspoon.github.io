@@ -4,8 +4,10 @@ title: Books
 permalink: /lists/books
 modified_date: 22/03/2023
 author: Andrew Bevan
-description: "Epic books that have inspired my software development career, from DevOps classics to clean code principles and architecture patterns."
+description: Essential books on DevOps, Clean Code, Software Architecture, and Design Patterns that have inspired my software development career.
 ---
+
+> These are epic books that have inspired me throughout my career. From DevOps practices to clean code principles, each book has shaped my approach to software development and leadership.
 
 ## [Investments Unlimited](https://www.amazon.com/Investments-Unlimited-Compliance-Thriving-Digital/dp/1950508536/)
 
