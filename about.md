@@ -2,16 +2,17 @@
 layout: page
 title: About
 permalink: /about/
+description: Senior Developer with 18+ years at Derivco, specializing in C#, .NET, cloud technologies, and software architecture in the iGaming industry.
 ---
 
 - 🙂 I am Andrew Bevan from [Durban, South Africa](https://goo.gl/maps/rQsiecctb9SovcdG9). 🔴🔵🟡🟢
-- 🔭 I’m a Senior Developer working on few large projects using the Microsoft Tech Stack for [Derivco](https://www.derivco.com) one of the largest iGaming Platform Providers.
+- 🔭 I’m a Senior Developer working on several large projects using the Microsoft Tech Stack for [Derivco](https://www.derivco.com), one of the largest iGaming Platform Providers.
 - 🌱 I’m currently learning more about Cloud Technologies while furthering my skills as a Software Architect.
 - ⚡ Fact: I enjoy spending time with my family and friends.
 - 📧 Want to connect with me?
-  - dm me on [X](https://x.com/bluntspoon)
-  - mail me on [Gmail](mailto:bluntspoon@gmail.com)
-  - follow me on [LinkedIn](https://www.linkedin.com/in/andrew-bevan)
+  - DM me on [X](https://x.com/bluntspoon)
+  - Email me at [bluntspoon@gmail.com](mailto:bluntspoon@gmail.com)
+  - Connect on [LinkedIn](https://www.linkedin.com/in/andrew-bevan)
 
 ## Senior Developer | 15+ Years of Software Development in the iGaming Industry
 
