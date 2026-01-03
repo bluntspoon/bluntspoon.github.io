@@ -9,7 +9,7 @@ image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
 social_image: /assets/images/featured/2024-01-08-17yrs-at-derivco.jpg
 ---
 
-The first half of 2025 has been a period of significant transformation at [Derivco](https://derivco.com). We've experienced major organizational changes that have affected many talented people—colleagues, friends, and incredible contributors to our journey. Change of this magnitude is never easy, but I believe it's important to reflect on this moment with honesty, empathy, and optimism for the future.
+The first half of 2025 has been a period of significant transformation at [Derivco](https://derivco.com). We've experienced major organizational changes that have affected many talented people — colleagues, friends, and incredible contributors to our journey. Change of this magnitude is never easy, but I believe it's important to reflect on this moment with honesty, empathy, and optimism for the future.
 
 ## To Those Moving On 🌟
 
@@ -21,7 +21,7 @@ While it may not feel like it right now, this change is an opportunity — a cha
 
 ### Change Makes Us Stronger
 
-Change is uncomfortable. It forces us out of our routines and into the unknown. But it's also where growth happens. Every transition I've faced in my career—even the difficult ones—has taught me something valuable and made me more resilient. This moment will do the same for you. Embrace it, learn from it, and let it propel you forward.
+Change is uncomfortable. It forces us out of our routines and into the unknown. But it's also where growth happens. Every transition I've faced in my career — even the difficult ones — has taught me something valuable and made me more resilient. This moment will do the same for you. Embrace it, learn from it, and let it propel you forward.
 
 ### Stay Positive and Keep Riding
 
@@ -51,7 +51,7 @@ Change is an opportunity for renewal. It's a chance to examine what worked, what
 
 ## Final Thoughts 💭
 
-To everyone affected by these changes—whether you're moving on or staying—thank you for your contributions, your passion, and your resilience. The tech industry is full of ups and downs, but it's the people who make it all worthwhile.
+To everyone affected by these changes — whether you're moving on or staying — thank you for your contributions, your passion, and your resilience. The tech industry is full of ups and downs, but it's the people who make it all worthwhile.
 
 Let's support each other through this transition. Let's stay connected, stay positive, and keep pushing forward. Whether we're embarking on new adventures or continuing the journey at Derivco, we all have bright futures ahead.
 
