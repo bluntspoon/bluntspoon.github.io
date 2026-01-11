@@ -4,7 +4,7 @@ title: "Holiday Reset: Relax, Unwind, and Build"
 date: 2026-01-11
 categories: personal
 tags: [holiday, family, lego, relaxation, reset]
-description: "Last day of holiday. Reflecting on a wonderful festive break filled with family time, relaxation, and even building Lego."
+description: "Last day of holiday. Reflecting on a wonderful festive break filled with family time, relaxation, and even building LEGO."
 slug: holiday-reset
 image: https://github.com/user-attachments/assets/c0f7d138-5592-44f9-8258-54b73e57c452
 ---
@@ -36,27 +36,27 @@ The festive holiday was spent with family—the people who matter most. We enjoy
 
 These are the moments that truly matter. The moments that create lasting memories. The moments that remind us what life is really all about.
 
-## Building Lego: Finding Joy in Creation 🧱
+## Building LEGO: Finding Joy in Creation 🧱
 
-One of the unexpected highlights of this holiday was getting to build Lego! There's something incredibly satisfying about following instructions, piece by piece, watching something beautiful take shape from a pile of plastic bricks.
+One of the unexpected highlights of this holiday was getting to build LEGO! There's something incredibly satisfying about following instructions, piece by piece, watching something beautiful take shape from a pile of plastic bricks.
 
 I had the pleasure of building the **LEGO Botanicals 10340 collection**—adorable little plant-themed characters that now sit proudly on my desk. These charming creations are more than just toys; they're a reminder to find joy in simple pleasures and to nurture creativity.
 
 ![LEGO Botanicals - Built Models](https://github.com/user-attachments/assets/c0f7d138-5592-44f9-8258-54b73e57c452)
 
-*The finished Lego Botanicals: cute plant friends ready to brighten up any workspace!*
+*The finished LEGO Botanicals: cute plant friends ready to brighten up any workspace!*
 
 ![LEGO Botanicals - Box and Pieces](https://github.com/user-attachments/assets/645166cd-f9b2-47dc-9d82-624c6f9ef5f0)
 
 *The journey begins: unboxing and preparing to build these botanical beauties.*
 
-Building Lego was meditative in a way—a chance to focus on one small task at a time, without thinking about anything else. It was a perfect metaphor for life: take it one step at a time, follow the plan, and enjoy the process of creation.
+Building LEGO was meditative in a way—a chance to focus on one small task at a time, without thinking about anything else. It was a perfect metaphor for life: take it one step at a time, follow the plan, and enjoy the process of creation.
 
 ## Excited to Continue Building the Future 🚀
 
 As this holiday comes to an end, I'm filled with gratitude and excitement. Gratitude for the precious time spent with family and the opportunity to completely disconnect. Excitement for what lies ahead in 2026.
 
-Just like building with Lego, the future is built one piece at a time. Each day is an opportunity to add another brick to the structure of our lives—whether that's:
+Just like building with LEGO, the future is built one piece at a time. Each day is an opportunity to add another brick to the structure of our lives—whether that's:
 
 - Growing professionally and embracing new technologies
 - Strengthening family bonds and creating more memories
@@ -71,7 +71,7 @@ This holiday reminded me of what's truly important: **family, rest, creativity, 
 
 1. **Switch off completely** when you need to—your mind and body will thank you
 2. **Be present** with the people you love—those moments are irreplaceable
-3. **Find joy in simple activities** like building Lego—creativity comes in many forms
+3. **Find joy in simple activities** like building LEGO—creativity comes in many forms
 4. **Return with energy and purpose**—a well-rested mind is a powerful tool
 
 Here's to a fantastic 2026 ahead! Let's continue building something amazing together. 🎊
