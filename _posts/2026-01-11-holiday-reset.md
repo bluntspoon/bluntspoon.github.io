@@ -6,7 +6,7 @@ categories: personal
 tags: [holiday, family, lego, relaxation, reset]
 description: "Last day of holiday. Reflecting on a wonderful festive break filled with family time, relaxation, and even building LEGO."
 slug: holiday-reset
-image: https://github.com/user-attachments/assets/c0f7d138-5592-44f9-8258-54b73e57c452
+image: https://github.com/user-attachments/assets/b4493e48-706e-4798-856f-96643d73e9a4
 ---
 
 > "Almost everything will work again if you unplug it for a few minutes, including you." - Anne Lamott
@@ -42,11 +42,11 @@ One of the unexpected highlights of this holiday was getting to build LEGO! Ther
 
 I had the pleasure of building the **LEGO Botanicals 10340 collection**—adorable little plant-themed characters that now sit proudly on my desk. These charming creations are more than just toys; they're a reminder to find joy in simple pleasures and to nurture creativity.
 
-![LEGO Botanicals - Built Models](https://github.com/user-attachments/assets/c0f7d138-5592-44f9-8258-54b73e57c452)
+![LEGO Botanicals - Built Models](https://github.com/user-attachments/assets/b4493e48-706e-4798-856f-96643d73e9a4)
 
 *The finished LEGO Botanicals: cute plant friends ready to brighten up any workspace!*
 
-![LEGO Botanicals - Box and Pieces](https://github.com/user-attachments/assets/645166cd-f9b2-47dc-9d82-624c6f9ef5f0)
+![LEGO Botanicals - Box and Pieces](https://github.com/user-attachments/assets/97af806b-9a4a-46c8-81c8-d23811d2a6fd)
 
 *The journey begins: unboxing and preparing to build these botanical beauties.*
 
