@@ -79,3 +79,12 @@ Here's to a fantastic 2026 ahead! Let's continue building something amazing toge
 ---
 
 *"The best way to predict the future is to create it."* - Peter Drucker
+
+## AI-Created Video 🎬
+
+<video width="100%" controls preload="metadata" title="AI-created video showcasing holiday moments" aria-label="AI-created video celebrating the holiday season and family time">
+  <source src="https://github.com/user-attachments/assets/1c68ac50-cc62-4a04-ad18-5e7ed9737182" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*An AI-created video celebrating the holiday season and family time.*
